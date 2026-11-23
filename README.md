@@ -1,4 +1,4 @@
-# HCAL Project: Academic Writing Coach
+ # HCAL Project: Academic Writing Coach
 
 A university writing-assistant prototype built around the HAI principle of **Transparency**.
 
