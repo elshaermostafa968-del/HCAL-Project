@@ -10,7 +10,7 @@ from openpyxl.worksheet.datavalidation import DataValidation
 from openpyxl.worksheet.table import Table,TableStyleInfo
 import re,subprocess
 ROOT=Path(__file__).resolve().parents[1]
-SOURCE=ROOT/'source';OUT=ROOT/'deliverables'
+SOURCE=ROOT/'source' if (ROOT/'source').exists() else ROOT/'editable-source';OUT=ROOT/'deliverables'
 META=json.loads((SOURCE/'team.json').read_text()) if (SOURCE/'team.json').exists() else {'team':'TEAM_NAME_PENDING','members':'MEMBERS_PENDING'}
 TEAM=META['team'];PREFIX=TEAM+'_W6-7_'
 
