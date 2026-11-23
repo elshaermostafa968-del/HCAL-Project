@@ -1,0 +1,1567 @@
+[
+  {
+    "case_id": "GS-001",
+    "expected_status": "ok",
+    "passed": true,
+    "response": {
+      "response_id": "12814789-c082-4a17-81b3-66b8fd568983",
+      "status": "ok",
+      "message": "Check this teaching rule. Active voice can make the actor clearer, but passive voice is permitted when the recipient of the action matters more.",
+      "hint": "Find who performs each action.",
+      "label": "style_suggestion",
+      "evidence": {
+        "rule_id": "GS-001",
+        "rule": "Active voice can make the actor clearer, but passive voice is permitted when the recipient of the action matters more.",
+        "source": "APA Style: Active and passive voice",
+        "source_url": "https://apastyle.apa.org/style-grammar-guidelines/grammar/active-passive-voice",
+        "score": 1.0,
+        "matched_terms": [
+          "by",
+          "checked",
+          "experiment",
+          "overuse",
+          "passive",
+          "planned",
+          "results",
+          "team",
+          "voice"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "GS-001"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.51,
+      "hint_level": 1,
+      "attempts": 0
+    }
+  },
+  {
+    "case_id": "GS-002",
+    "expected_status": "ok",
+    "passed": true,
+    "response": {
+      "response_id": "d00b213c-ab08-4e62-95bb-af1d1e26146a",
+      "status": "ok",
+      "message": "Check this teaching rule. In standard academic prose, a verb agrees in number with its subject.",
+      "hint": "Find the subject of the verb.",
+      "label": "mandatory_rule",
+      "evidence": {
+        "rule_id": "GS-002",
+        "rule": "In standard academic prose, a verb agrees in number with its subject.",
+        "source": "Purdue OWL: Proofreading for errors",
+        "source_url": "https://owl.purdue.edu/owl/general_writing/the_writing_process/proofreading/proofreading_for_errors.html",
+        "score": 1.0,
+        "matched_terms": [
+          "agreement",
+          "collected",
+          "sample",
+          "subject",
+          "verb",
+          "yesterday"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "GS-002"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.21,
+      "hint_level": 1,
+      "attempts": 0
+    }
+  },
+  {
+    "case_id": "GS-003",
+    "expected_status": "ok",
+    "passed": true,
+    "response": {
+      "response_id": "daf3c405-311f-465f-89d9-0b52b99e0937",
+      "status": "ok",
+      "message": "Check this teaching rule. Two independent clauses need appropriate separation or a conjunction; a comma alone does not join them.",
+      "hint": "Find the two complete clauses.",
+      "label": "mandatory_rule",
+      "evidence": {
+        "rule_id": "GS-003",
+        "rule": "Two independent clauses need appropriate separation or a conjunction; a comma alone does not join them.",
+        "source": "Purdue OWL: Proofreading for errors",
+        "source_url": "https://owl.purdue.edu/owl/general_writing/the_writing_process/proofreading/proofreading_for_errors.html",
+        "score": 1.0,
+        "matched_terms": [
+          "comma",
+          "ended",
+          "recorded",
+          "results",
+          "run",
+          "sentence",
+          "splice",
+          "team",
+          "trial"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "GS-003"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.23,
+      "hint_level": 1,
+      "attempts": 0
+    }
+  },
+  {
+    "case_id": "GS-004",
+    "expected_status": "ok",
+    "passed": true,
+    "response": {
+      "response_id": "35ea0dc6-d98b-421a-9e1a-6df36cc54376",
+      "status": "ok",
+      "message": "Check this teaching rule. A dependent clause alone is not a complete sentence in ordinary formal academic prose.",
+      "hint": "Look at the opening word Because.",
+      "label": "mandatory_rule",
+      "evidence": {
+        "rule_id": "GS-004",
+        "rule": "A dependent clause alone is not a complete sentence in ordinary formal academic prose.",
+        "source": "Purdue OWL: Sentence fragments",
+        "source_url": "https://owl.purdue.edu/owl/general_writing/mechanics/sentence_fragments.html",
+        "score": 1.0,
+        "matched_terms": [
+          "because",
+          "during",
+          "failed",
+          "final",
+          "fragment",
+          "sensor",
+          "sentence",
+          "trial"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "GS-004"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.21,
+      "hint_level": 1,
+      "attempts": 0
+    }
+  },
+  {
+    "case_id": "GS-005",
+    "expected_status": "ok",
+    "passed": true,
+    "response": {
+      "response_id": "0a68aefb-299a-48a5-bbf2-93989544edb4",
+      "status": "ok",
+      "message": "Check this teaching rule. Keep verb tense consistent when actions occur in the same time frame; change tense when the time frame changes.",
+      "hint": "Find the time marker yesterday.",
+      "label": "mandatory_rule",
+      "evidence": {
+        "rule_id": "GS-005",
+        "rule": "Keep verb tense consistent when actions occur in the same time frame; change tense when the time frame changes.",
+        "source": "Purdue OWL: Verb tense consistency",
+        "source_url": "https://owl.purdue.edu/owl/general_writing/grammar/verb_tenses/verb_tense_consistency.html",
+        "score": 1.0,
+        "matched_terms": [
+          "inconsistency",
+          "measured",
+          "records",
+          "sample",
+          "team",
+          "tense",
+          "value",
+          "yesterday"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "GS-005"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.21,
+      "hint_level": 1,
+      "attempts": 0
+    }
+  },
+  {
+    "case_id": "GS-006",
+    "expected_status": "ok",
+    "passed": true,
+    "response": {
+      "response_id": "4ddb9e98-20ef-43c8-97e1-e64398841431",
+      "status": "ok",
+      "message": "Check this teaching rule. Items with the same grammatical function in a list should use parallel grammatical forms.",
+      "hint": "Underline the three activities.",
+      "label": "mandatory_rule",
+      "evidence": {
+        "rule_id": "GS-006",
+        "rule": "Items with the same grammatical function in a list should use parallel grammatical forms.",
+        "source": "Purdue OWL: Proofreading for errors",
+        "source_url": "https://owl.purdue.edu/owl/general_writing/the_writing_process/proofreading/proofreading_for_errors.html",
+        "score": 1.0,
+        "matched_terms": [
+          "compare",
+          "involves",
+          "measuring",
+          "parallel",
+          "project",
+          "recording",
+          "results",
+          "samples",
+          "structure",
+          "values"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "GS-006"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.21,
+      "hint_level": 1,
+      "attempts": 0
+    }
+  },
+  {
+    "case_id": "GS-007",
+    "expected_status": "ok",
+    "passed": true,
+    "response": {
+      "response_id": "f68cdc32-ab99-43c4-a3f4-2865a30b8298",
+      "status": "ok",
+      "message": "Check this teaching rule. Make a pronoun's referent clear when more than one noun could fit.",
+      "hint": "Who does she refer to here?",
+      "label": "style_suggestion",
+      "evidence": {
+        "rule_id": "GS-007",
+        "rule": "Make a pronoun's referent clear when more than one noun could fit.",
+        "source": "Purdue OWL: Proofreading for errors",
+        "source_url": "https://owl.purdue.edu/owl/general_writing/the_writing_process/proofreading/proofreading_for_errors.html",
+        "score": 1.0,
+        "matched_terms": [
+          "after",
+          "ambiguous",
+          "analysis",
+          "discussed",
+          "finished",
+          "lina",
+          "pronoun",
+          "reference",
+          "report",
+          "salma",
+          "she"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "GS-007"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.22,
+      "hint_level": 1,
+      "attempts": 0
+    }
+  },
+  {
+    "case_id": "GS-008",
+    "expected_status": "ok",
+    "passed": true,
+    "response": {
+      "response_id": "7845e28a-0002-462a-8cd6-a524cd04ff78",
+      "status": "ok",
+      "message": "Check this teaching rule. An example phrase introduced by such as usually needs to be attached to the clause it illustrates.",
+      "hint": "Locate the phrase introduced by Such as.",
+      "label": "mandatory_rule",
+      "evidence": {
+        "rule_id": "GS-008",
+        "rule": "An example phrase introduced by such as usually needs to be attached to the clause it illustrates.",
+        "source": "Purdue OWL: Sentence fragments",
+        "source_url": "https://owl.purdue.edu/owl/general_writing/mechanics/sentence_fragments.html",
+        "score": 1.0,
+        "matched_terms": [
+          "as",
+          "detached",
+          "example",
+          "final",
+          "fragment",
+          "pattern",
+          "rise",
+          "sample",
+          "saw",
+          "such",
+          "we"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "GS-008"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.23,
+      "hint_level": 1,
+      "attempts": 0
+    }
+  },
+  {
+    "case_id": "GS-009",
+    "expected_status": "ok",
+    "passed": true,
+    "response": {
+      "response_id": "7c6c5d5f-192c-401e-9ec8-6f69ade52df7",
+      "status": "ok",
+      "message": "Check this teaching rule. A noun phrase without a main verb does not form a complete declarative sentence.",
+      "hint": "Find the subject and the main verb.",
+      "label": "mandatory_rule",
+      "evidence": {
+        "rule_id": "GS-009",
+        "rule": "A noun phrase without a main verb does not form a complete declarative sentence.",
+        "source": "Purdue OWL: Sentence fragments",
+        "source_url": "https://owl.purdue.edu/owl/general_writing/mechanics/sentence_fragments.html",
+        "score": 1.0,
+        "matched_terms": [
+          "all",
+          "detailed",
+          "fragment",
+          "from",
+          "main",
+          "measurements",
+          "missing",
+          "record",
+          "second",
+          "trial",
+          "verb"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "GS-009"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.22,
+      "hint_level": 1,
+      "attempts": 0
+    }
+  },
+  {
+    "case_id": "GS-010",
+    "expected_status": "ok",
+    "passed": true,
+    "response": {
+      "response_id": "f5c20ff5-a776-42d6-a55c-5e059b72ac0c",
+      "status": "ok",
+      "message": "Check this teaching rule. Passive voice is acceptable when the process or recipient matters more than the actor; it is not automatically an error.",
+      "hint": "Decide whether the process is the focus.",
+      "label": "style_suggestion",
+      "evidence": {
+        "rule_id": "GS-010",
+        "rule": "Passive voice is acceptable when the process or recipient matters more than the actor; it is not automatically an error.",
+        "source": "APA Style: Active and passive voice",
+        "source_url": "https://apastyle.apa.org/style-grammar-guidelines/grammar/active-passive-voice",
+        "score": 1.0,
+        "matched_terms": [
+          "analysis",
+          "appropriateness",
+          "before",
+          "heated",
+          "methods",
+          "minutes",
+          "passive",
+          "solution",
+          "ten",
+          "voice"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "GS-010"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.2,
+      "hint_level": 1,
+      "attempts": 0
+    }
+  },
+  {
+    "case_id": "CF-001",
+    "expected_status": "ok",
+    "passed": true,
+    "response": {
+      "response_id": "e88f9cf5-8404-4cf9-81a6-0587b2b4b54b",
+      "status": "ok",
+      "message": "Check this teaching rule. An APA in-text citation normally identifies the author and publication year; use the real year from the source, not an invented one.",
+      "hint": "Check which part of author-date is missing.",
+      "label": "mandatory_rule",
+      "evidence": {
+        "rule_id": "CF-001",
+        "rule": "An APA in-text citation normally identifies the author and publication year; use the real year from the source, not an invented one.",
+        "source": "APA Style: Author-date citation system",
+        "source_url": "https://apastyle.apa.org/style-grammar-guidelines/citations/basic-principles/author-date",
+        "score": 1.0,
+        "matched_terms": [
+          "apa",
+          "author",
+          "citation",
+          "claim",
+          "date",
+          "earlier",
+          "missing",
+          "nadir",
+          "research",
+          "supports",
+          "year"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "CF-001"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.21,
+      "hint_level": 1,
+      "attempts": 0
+    }
+  },
+  {
+    "case_id": "CF-002",
+    "expected_status": "ok",
+    "passed": true,
+    "response": {
+      "response_id": "69feedb5-3842-47f6-a201-722364742eec",
+      "status": "ok",
+      "message": "Check this teaching rule. A direct quotation in APA needs author, year, and a locator such as a page number; do not invent a locator.",
+      "hint": "First confirm whether these are the source's exact words.",
+      "label": "mandatory_rule",
+      "evidence": {
+        "rule_id": "CF-002",
+        "rule": "A direct quotation in APA needs author, year, and a locator such as a page number; do not invent a locator.",
+        "source": "APA Style: Student paper checklist, 7th edition",
+        "source_url": "https://apastyle.apa.org/instructional-aids/concise-guide-formatting-checklist.pdf",
+        "score": 1,
+        "matched_terms": [
+          "2022",
+          "apa",
+          "improved",
+          "locator",
+          "missing",
+          "model",
+          "nadir",
+          "outcomes",
+          "page",
+          "quotation"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "CF-002"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.2,
+      "hint_level": 1,
+      "attempts": 0
+    }
+  },
+  {
+    "case_id": "CF-003",
+    "expected_status": "ok",
+    "passed": true,
+    "response": {
+      "response_id": "43449485-dff0-466f-bbf7-8a34be4fc431",
+      "status": "ok",
+      "message": "Check this teaching rule. APA parenthetical citations use an ampersand between two author names; narrative citations spell out and.",
+      "hint": "Is this citation inside parentheses?",
+      "label": "mandatory_rule",
+      "evidence": {
+        "rule_id": "CF-003",
+        "rule": "APA parenthetical citations use an ampersand between two author names; narrative citations spell out and.",
+        "source": "APA Style: Author-date citation system",
+        "source_url": "https://apastyle.apa.org/style-grammar-guidelines/citations/basic-principles/author-date",
+        "score": 1.0,
+        "matched_terms": [
+          "2023",
+          "ampersand",
+          "apa",
+          "authors",
+          "describes",
+          "earlier",
+          "imani",
+          "method",
+          "nadir",
+          "parenthetical",
+          "two",
+          "work"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "CF-003"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.3,
+      "hint_level": 1,
+      "attempts": 0
+    }
+  },
+  {
+    "case_id": "CF-004",
+    "expected_status": "ok",
+    "passed": true,
+    "response": {
+      "response_id": "b2bf9c1d-c842-4371-889a-94529e6349af",
+      "status": "ok",
+      "message": "Check this teaching rule. APA narrative citations spell out and between two author names.",
+      "hint": "Are the authors part of your sentence?",
+      "label": "mandatory_rule",
+      "evidence": {
+        "rule_id": "CF-004",
+        "rule": "APA narrative citations spell out and between two author names.",
+        "source": "APA Style: Author-date citation system",
+        "source_url": "https://apastyle.apa.org/style-grammar-guidelines/citations/basic-principles/author-date",
+        "score": 1.0,
+        "matched_terms": [
+          "2023",
+          "apa",
+          "authors",
+          "describe",
+          "imani",
+          "method",
+          "nadir",
+          "narrative",
+          "two"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "CF-004"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.27,
+      "hint_level": 1,
+      "attempts": 0
+    }
+  },
+  {
+    "case_id": "CF-005",
+    "expected_status": "ok",
+    "passed": true,
+    "response": {
+      "response_id": "980a1588-4b1f-4991-9112-76beb3609346",
+      "status": "ok",
+      "message": "Check this teaching rule. APA normally abbreviates a work with three or more authors to the first surname plus et al.; disambiguation exceptions exist.",
+      "hint": "Count the authors of this work.",
+      "label": "mandatory_rule",
+      "evidence": {
+        "rule_id": "CF-005",
+        "rule": "APA normally abbreviates a work with three or more authors to the first surname plus et al.; disambiguation exceptions exist.",
+        "source": "APA Style: Author-date citation system",
+        "source_url": "https://apastyle.apa.org/style-grammar-guidelines/citations/basic-principles/author-date",
+        "score": 1.0,
+        "matched_terms": [
+          "2024",
+          "al",
+          "apa",
+          "authors",
+          "chen",
+          "et",
+          "finding",
+          "imani",
+          "nadir",
+          "replicated",
+          "three"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "CF-005"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.22,
+      "hint_level": 1,
+      "attempts": 0
+    }
+  },
+  {
+    "case_id": "CF-006",
+    "expected_status": "ok",
+    "passed": true,
+    "response": {
+      "response_id": "022e4265-3590-47b2-a752-9b31bc191ad2",
+      "status": "ok",
+      "message": "Check this teaching rule. For a genuinely undated source, APA uses n.d.; do not substitute the access year for a missing publication year.",
+      "hint": "Check whether a publication date is actually available.",
+      "label": "mandatory_rule",
+      "evidence": {
+        "rule_id": "CF-006",
+        "rule": "For a genuinely undated source, APA uses n.d.; do not substitute the access year for a missing publication year.",
+        "source": "APA Style: Author-date citation system",
+        "source_url": "https://apastyle.apa.org/style-grammar-guidelines/citations/basic-principles/author-date",
+        "score": 1.0,
+        "matched_terms": [
+          "2026",
+          "apa",
+          "as",
+          "cited",
+          "date",
+          "fabricated",
+          "nadir",
+          "nd",
+          "no",
+          "publication",
+          "source",
+          "year"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "CF-006"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.21,
+      "hint_level": 1,
+      "attempts": 0
+    }
+  },
+  {
+    "case_id": "CF-007",
+    "expected_status": "ok",
+    "passed": true,
+    "response": {
+      "response_id": "7b430c5c-e909-4d49-a59c-ae1e65c31625",
+      "status": "ok",
+      "message": "Check this teaching rule. Paraphrasing an idea still requires attribution to the original work.",
+      "hint": "Identify whose idea the summary expresses.",
+      "label": "mandatory_rule",
+      "evidence": {
+        "rule_id": "CF-007",
+        "rule": "Paraphrasing an idea still requires attribution to the original work.",
+        "source": "APA Style: Paraphrases",
+        "source_url": "https://apastyle.apa.org/style-grammar-guidelines/citations/paraphrasing",
+        "score": 1.0,
+        "matched_terms": [
+          "apa",
+          "attribution",
+          "citation",
+          "explanation",
+          "nadir",
+          "own",
+          "paraphrase",
+          "s",
+          "summarized",
+          "without",
+          "words"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "CF-007"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.23,
+      "hint_level": 1,
+      "attempts": 0
+    }
+  },
+  {
+    "case_id": "CF-008",
+    "expected_status": "ok",
+    "passed": true,
+    "response": {
+      "response_id": "bd113cee-e76c-4001-9c59-57de00590bb8",
+      "status": "ok",
+      "message": "Check this teaching rule. A page or paragraph number is optional for an APA paraphrase, though a locator can help readers find a passage in a long work.",
+      "hint": "Confirm that this is a paraphrase, not a quotation.",
+      "label": "style_suggestion",
+      "evidence": {
+        "rule_id": "CF-008",
+        "rule": "A page or paragraph number is optional for an APA paraphrase, though a locator can help readers find a passage in a long work.",
+        "source": "APA Style: Paraphrases",
+        "source_url": "https://apastyle.apa.org/style-grammar-guidelines/citations/paraphrasing",
+        "score": 1.0,
+        "matched_terms": [
+          "apa",
+          "author",
+          "but",
+          "has",
+          "no",
+          "number",
+          "optional",
+          "page",
+          "paraphrase",
+          "year"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "CF-008"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.25,
+      "hint_level": 1,
+      "attempts": 0
+    }
+  },
+  {
+    "case_id": "CF-009",
+    "expected_status": "ok",
+    "passed": true,
+    "response": {
+      "response_id": "31ede9c2-e5d2-4faf-9c2f-a208c93380db",
+      "status": "ok",
+      "message": "Check this teaching rule. An MLA citation points to the works-cited entry and, where relevant, a location; the usual author-page form does not put a comma between author and page.",
+      "hint": "Identify the author and the page locator.",
+      "label": "mandatory_rule",
+      "evidence": {
+        "rule_id": "CF-009",
+        "rule": "An MLA citation points to the works-cited entry and, where relevant, a location; the usual author-page form does not put a comma between author and page.",
+        "source": "MLA Style Center: In-text citations, an overview",
+        "source_url": "https://style.mla.org/in-text-citations-overview/",
+        "score": 1.0,
+        "matched_terms": [
+          "24",
+          "author",
+          "comma",
+          "mla",
+          "nadir",
+          "page",
+          "passage",
+          "reading",
+          "supports"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "CF-009"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.16,
+      "hint_level": 1,
+      "attempts": 0
+    }
+  },
+  {
+    "case_id": "CF-010",
+    "expected_status": "ok",
+    "passed": true,
+    "response": {
+      "response_id": "43e92b4a-7c3c-4c23-b085-5bdc0113ac3b",
+      "status": "ok",
+      "message": "Check this teaching rule. When the author is already named in the prose, an MLA parenthetical citation normally provides just the necessary location marker.",
+      "hint": "Notice where the author's name already appears.",
+      "label": "mandatory_rule",
+      "evidence": {
+        "rule_id": "CF-010",
+        "rule": "When the author is already named in the prose, an MLA parenthetical citation normally provides just the necessary location marker.",
+        "source": "MLA Style Center: In-text citations, an overview",
+        "source_url": "https://style.mla.org/in-text-citations-overview/",
+        "score": 1.0,
+        "matched_terms": [
+          "24",
+          "argues",
+          "author",
+          "ending",
+          "mla",
+          "nadir",
+          "prose",
+          "redundant",
+          "unresolved"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "CF-010"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.16,
+      "hint_level": 1,
+      "attempts": 0
+    }
+  },
+  {
+    "case_id": "CF-011",
+    "expected_status": "ok",
+    "passed": true,
+    "response": {
+      "response_id": "67645790-96fe-40ac-9baa-28a638a45833",
+      "status": "ok",
+      "message": "Check this teaching rule. IEEE reference citations in text use reference numbers in square brackets, not parentheses.",
+      "hint": "Find the reference number.",
+      "label": "mandatory_rule",
+      "evidence": {
+        "rule_id": "CF-011",
+        "rule": "IEEE reference citations in text use reference numbers in square brackets, not parentheses.",
+        "source": "IEEE Reference Guide, References in text and Style",
+        "source_url": "https://journals.ieeeauthorcenter.ieee.org/wp-content/uploads/IEEE-Reference-Guide.pdf",
+        "score": 1,
+        "matched_terms": [
+          "3",
+          "brackets",
+          "citation",
+          "design",
+          "earlier",
+          "follows",
+          "ieee",
+          "numeric",
+          "square",
+          "work"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "CF-011"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.15,
+      "hint_level": 1,
+      "attempts": 0
+    }
+  },
+  {
+    "case_id": "CF-012",
+    "expected_status": "ok",
+    "passed": true,
+    "response": {
+      "response_id": "4312d486-f2e4-48f4-8376-d5e8ac090d07",
+      "status": "ok",
+      "message": "Check this teaching rule. The IEEE reference list assigns one reference to each number; do not combine separate works under one reference number.",
+      "hint": "Count the separate works under this number.",
+      "label": "mandatory_rule",
+      "evidence": {
+        "rule_id": "CF-012",
+        "rule": "The IEEE reference list assigns one reference to each number; do not combine separate works under one reference number.",
+        "source": "IEEE Reference Guide, References in text and Style",
+        "source_url": "https://journals.ieeeauthorcenter.ieee.org/wp-content/uploads/IEEE-Reference-Guide.pdf",
+        "score": 1.0,
+        "matched_terms": [
+          "4",
+          "articles",
+          "bibliography",
+          "each",
+          "ieee",
+          "lists",
+          "number",
+          "one",
+          "reference",
+          "source",
+          "two",
+          "under",
+          "unrelated"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "CF-012"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.17,
+      "hint_level": 1,
+      "attempts": 0
+    }
+  },
+  {
+    "case_id": "SA-001",
+    "expected_status": "ok",
+    "passed": true,
+    "response": {
+      "response_id": "9b590433-1748-4e54-9075-4ba195c9d91e",
+      "status": "ok",
+      "message": "Check this teaching rule. An analytical thesis should make an arguable central claim rather than merely announce a topic.",
+      "hint": "What claim do you want the reader to consider?",
+      "label": "style_suggestion",
+      "evidence": {
+        "rule_id": "SA-001",
+        "rule": "An analytical thesis should make an arguable central claim rather than merely announce a topic.",
+        "source": "Harvard College Writing Center: Thesis",
+        "source_url": "https://writingcenter.fas.harvard.edu/thesis",
+        "score": 1.0,
+        "matched_terms": [
+          "about",
+          "descriptive",
+          "essay",
+          "public",
+          "statement",
+          "thesis",
+          "transport"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "SA-001"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.2,
+      "hint_level": 1,
+      "attempts": 0
+    }
+  },
+  {
+    "case_id": "SA-002",
+    "expected_status": "ok",
+    "passed": true,
+    "response": {
+      "response_id": "92b1a3b4-96d6-49e2-97d0-b3a55d3e09c3",
+      "status": "ok",
+      "message": "Check this teaching rule. The scope of a thesis should be supportable with the evidence and space available.",
+      "hint": "Notice the scope of All and everywhere.",
+      "label": "style_suggestion",
+      "evidence": {
+        "rule_id": "SA-002",
+        "rule": "The scope of a thesis should be supportable with the evidence and space available.",
+        "source": "Harvard College Writing Center: Thesis",
+        "source_url": "https://writingcenter.fas.harvard.edu/thesis",
+        "score": 1.0,
+        "matched_terms": [
+          "all",
+          "broad",
+          "change",
+          "educational",
+          "everywhere",
+          "immediately",
+          "must",
+          "scope",
+          "systems",
+          "thesis",
+          "too"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "SA-002"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.24,
+      "hint_level": 1,
+      "attempts": 0
+    }
+  },
+  {
+    "case_id": "SA-003",
+    "expected_status": "ok",
+    "passed": true,
+    "response": {
+      "response_id": "a21c87a3-f429-4001-ab58-d86b48e143b0",
+      "status": "ok",
+      "message": "Check this teaching rule. A body-paragraph claim needs relevant evidence and analysis showing how that evidence supports the claim.",
+      "hint": "What evidence supports always and every?",
+      "label": "style_suggestion",
+      "evidence": {
+        "rule_id": "SA-003",
+        "rule": "A body-paragraph claim needs relevant evidence and analysis showing how that evidence supports the claim.",
+        "source": "Harvard College Writing Center: Anatomy of a body paragraph",
+        "source_url": "https://writingcenter.fas.harvard.edu/anatomy-body-paragraph",
+        "score": 1.0,
+        "matched_terms": [
+          "always",
+          "claim",
+          "every",
+          "evidence",
+          "grades",
+          "groups",
+          "improve",
+          "s",
+          "student",
+          "study",
+          "unsupported"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "SA-003"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.23,
+      "hint_level": 1,
+      "attempts": 0
+    }
+  },
+  {
+    "case_id": "SA-004",
+    "expected_status": "ok",
+    "passed": true,
+    "response": {
+      "response_id": "6b5094e9-9591-4175-8acc-b594dbfc49a8",
+      "status": "ok",
+      "message": "Check this teaching rule. Explain how the evidence supports the paragraph's claim rather than assuming the connection is obvious.",
+      "hint": "Separate the result from your interpretation.",
+      "label": "style_suggestion",
+      "evidence": {
+        "rule_id": "SA-004",
+        "rule": "Explain how the evidence supports the paragraph's claim rather than assuming the connection is obvious.",
+        "source": "Harvard College Writing Center: Anatomy of a body paragraph",
+        "source_url": "https://writingcenter.fas.harvard.edu/anatomy-body-paragraph",
+        "score": 1.0,
+        "matched_terms": [
+          "8",
+          "analysis",
+          "attendance",
+          "by",
+          "evidence",
+          "ideal",
+          "improved",
+          "percent",
+          "policy",
+          "proves",
+          "trial",
+          "without"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "SA-004"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.22,
+      "hint_level": 1,
+      "attempts": 0
+    }
+  },
+  {
+    "case_id": "SA-005",
+    "expected_status": "ok",
+    "passed": true,
+    "response": {
+      "response_id": "eecbb0d0-c5a0-440e-9649-cf98676c2168",
+      "status": "ok",
+      "message": "Check this teaching rule. A body paragraph usually develops one main point; start a new paragraph when moving to a different point.",
+      "hint": "Identify the main point of each sentence.",
+      "label": "style_suggestion",
+      "evidence": {
+        "rule_id": "SA-005",
+        "rule": "A body paragraph usually develops one main point; start a new paragraph when moving to a different point.",
+        "source": "Harvard College Writing Center: Anatomy of a body paragraph",
+        "source_url": "https://writingcenter.fas.harvard.edu/anatomy-body-paragraph",
+        "score": 1.0,
+        "matched_terms": [
+          "buses",
+          "changed",
+          "congestion",
+          "hours",
+          "ideas",
+          "last",
+          "library",
+          "opening",
+          "paragraph",
+          "reduce",
+          "unity",
+          "unrelated",
+          "year"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "SA-005"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.21,
+      "hint_level": 1,
+      "attempts": 0
+    }
+  },
+  {
+    "case_id": "SA-006",
+    "expected_status": "ok",
+    "passed": true,
+    "response": {
+      "response_id": "bf4300fd-dc7b-4e00-abc6-0146ca9c7eb8",
+      "status": "ok",
+      "message": "Check this teaching rule. A useful topic sentence states a main idea and helps readers see its connection to the larger argument.",
+      "hint": "What specific point will this paragraph establish?",
+      "label": "style_suggestion",
+      "evidence": {
+        "rule_id": "SA-006",
+        "rule": "A useful topic sentence states a main idea and helps readers see its connection to the larger argument.",
+        "source": "Harvard College Writing Center: Anatomy of a body paragraph",
+        "source_url": "https://writingcenter.fas.harvard.edu/anatomy-body-paragraph",
+        "score": 1.0,
+        "matched_terms": [
+          "consider",
+          "here",
+          "important",
+          "sentence",
+          "several",
+          "there",
+          "things",
+          "topic",
+          "vague"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "SA-006"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.21,
+      "hint_level": 1,
+      "attempts": 0
+    }
+  },
+  {
+    "case_id": "SA-007",
+    "expected_status": "ok",
+    "passed": true,
+    "response": {
+      "response_id": "ead70931-8dba-473c-9ba2-32ef0fd7a9eb",
+      "status": "ok",
+      "message": "Check this teaching rule. Use a transition that reflects the actual relationship between ideas; therefore should signal a supported consequence.",
+      "hint": "What relationship does Therefore claim?",
+      "label": "style_suggestion",
+      "evidence": {
+        "rule_id": "SA-007",
+        "rule": "Use a transition that reflects the actual relationship between ideas; therefore should signal a supported consequence.",
+        "source": "Harvard College Writing Center: Transitions",
+        "source_url": "https://writingcenter.fas.harvard.edu/transitions",
+        "score": 1.0,
+        "matched_terms": [
+          "causal",
+          "costly",
+          "diverse",
+          "method",
+          "misleading",
+          "sample",
+          "therefore",
+          "transition"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "SA-007"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.2,
+      "hint_level": 1,
+      "attempts": 0
+    }
+  },
+  {
+    "case_id": "SA-008",
+    "expected_status": "ok",
+    "passed": true,
+    "response": {
+      "response_id": "ee6f7f23-d744-4a09-a6f2-8613d04c80de",
+      "status": "ok",
+      "message": "Check this teaching rule. Transitions should help readers understand how one idea connects to the next and to the argument.",
+      "hint": "Summarize the two paragraph points.",
+      "label": "style_suggestion",
+      "evidence": {
+        "rule_id": "SA-008",
+        "rule": "Transitions should help readers understand how one idea connects to the next and to the argument.",
+        "source": "Harvard College Writing Center: Transitions",
+        "source_url": "https://writingcenter.fas.harvard.edu/transitions",
+        "score": 1.0,
+        "matched_terms": [
+          "abrupt",
+          "begins",
+          "benefit",
+          "costs",
+          "discusses",
+          "first",
+          "next",
+          "paragraph",
+          "section",
+          "transition",
+          "unrelated"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "SA-008"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.22,
+      "hint_level": 1,
+      "attempts": 0
+    }
+  },
+  {
+    "case_id": "SA-009",
+    "expected_status": "ok",
+    "passed": true,
+    "response": {
+      "response_id": "91e7d2f2-e665-4ac5-a0de-6bfe8c9bf3a9",
+      "status": "ok",
+      "message": "Check this teaching rule. Consider reasonable objections to the argument and explain how your position responds to them.",
+      "hint": "Imagine a thoughtful reader who disagrees.",
+      "label": "style_suggestion",
+      "evidence": {
+        "rule_id": "SA-009",
+        "rule": "Consider reasonable objections to the argument and explain how your position responds to them.",
+        "source": "Harvard College Writing Center: Counterargument",
+        "source_url": "https://writingcenter.fas.harvard.edu/counterargument",
+        "score": 1.0,
+        "matched_terms": [
+          "agrees",
+          "be",
+          "counterargument",
+          "discussed",
+          "everyone",
+          "missing",
+          "need",
+          "not",
+          "objections",
+          "policy",
+          "so"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "SA-009"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.21,
+      "hint_level": 1,
+      "attempts": 0
+    }
+  },
+  {
+    "case_id": "SA-010",
+    "expected_status": "ok",
+    "passed": true,
+    "response": {
+      "response_id": "ce53f22e-cfed-4320-a9ff-6117e48223d1",
+      "status": "ok",
+      "message": "Check this teaching rule. Present a counterargument in a form a reasonable reader could recognize before responding to it.",
+      "hint": "Have you stated the objection or judged its supporters?",
+      "label": "style_suggestion",
+      "evidence": {
+        "rule_id": "SA-010",
+        "rule": "Present a counterargument in a form a reasonable reader could recognize before responding to it.",
+        "source": "Harvard College Writing Center: Counterargument",
+        "source_url": "https://writingcenter.fas.harvard.edu/counterargument",
+        "score": 1.0,
+        "matched_terms": [
+          "counterargument",
+          "critics",
+          "dislike",
+          "man",
+          "progress",
+          "proposal",
+          "simply",
+          "straw",
+          "unfair"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "SA-010"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.2,
+      "hint_level": 1,
+      "attempts": 0
+    }
+  },
+  {
+    "case_id": "SA-011",
+    "expected_status": "ok",
+    "passed": true,
+    "response": {
+      "response_id": "ceb72508-445f-4ada-873a-3ede457e9140",
+      "status": "ok",
+      "message": "Check this teaching rule. Evidence alone is not a body-paragraph argument; explain what the evidence helps the reader understand.",
+      "hint": "Find your own analytical contribution.",
+      "label": "style_suggestion",
+      "evidence": {
+        "rule_id": "SA-011",
+        "rule": "Evidence alone is not a body-paragraph argument; explain what the evidence helps the reader understand.",
+        "source": "Harvard College Writing Center: Anatomy of a body paragraph",
+        "source_url": "https://writingcenter.fas.harvard.edu/anatomy-body-paragraph",
+        "score": 1.0,
+        "matched_terms": [
+          "analysis",
+          "body",
+          "entire",
+          "evidence",
+          "explanation",
+          "needs",
+          "no",
+          "paragraph",
+          "quotation"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "SA-011"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.38,
+      "hint_level": 1,
+      "attempts": 0
+    }
+  },
+  {
+    "case_id": "SA-012",
+    "expected_status": "ok",
+    "passed": true,
+    "response": {
+      "response_id": "d9a21b37-0b55-45ca-acf2-60d6a5a3da85",
+      "status": "ok",
+      "message": "Check this teaching rule. An analytical thesis normally invites reasoned disagreement and needs evidence and analysis to support it.",
+      "hint": "Is this a fact to report or an interpretation to defend?",
+      "label": "style_suggestion",
+      "evidence": {
+        "rule_id": "SA-012",
+        "rule": "An analytical thesis normally invites reasoned disagreement and needs evidence and analysis to support it.",
+        "source": "Harvard College Writing Center: Thesis",
+        "source_url": "https://writingcenter.fas.harvard.edu/thesis",
+        "score": 1,
+        "matched_terms": [
+          "analytical",
+          "announcement",
+          "arguable",
+          "claim",
+          "could",
+          "dispute",
+          "factual",
+          "makes",
+          "no",
+          "not",
+          "reader",
+          "thesis"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "SA-012"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.24,
+      "hint_level": 1,
+      "attempts": 0
+    }
+  },
+  {
+    "case_id": "IC-001",
+    "expected_status": "needs_context",
+    "passed": true,
+    "response": {
+      "response_id": "58b24e93-909a-44e9-8f18-2901e6511f0d",
+      "status": "needs_context",
+      "message": "Which excerpt would you like to check?",
+      "hint": null,
+      "label": null,
+      "evidence": null,
+      "uncertainty_note": "I am not sure. Which excerpt would you like to check?",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.16
+    }
+  },
+  {
+    "case_id": "IC-002",
+    "expected_status": "needs_context",
+    "passed": true,
+    "response": {
+      "response_id": "7ce45c85-e2ab-4ba6-9069-210161c4a7d3",
+      "status": "needs_context",
+      "message": "Which style does the assignment require: APA, MLA, or IEEE?",
+      "hint": null,
+      "label": null,
+      "evidence": null,
+      "uncertainty_note": "I am not sure. Which style does the assignment require: APA, MLA, or IEEE?",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.17
+    }
+  },
+  {
+    "case_id": "IC-003",
+    "expected_status": "uncertain",
+    "passed": true,
+    "response": {
+      "response_id": "598ac4ca-d7b5-4ba4-b09a-b1d1c1bfae2d",
+      "status": "uncertain",
+      "message": "I am not sure which local instruction takes precedence. Ask your instructor to clarify the assignment requirements.",
+      "hint": null,
+      "label": null,
+      "evidence": null,
+      "uncertainty_note": "Local requirements are not in this dataset.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [
+        {
+          "title": "Your course instructor",
+          "detail": "Use the contact in your syllabus. Ask which local requirement applies.",
+          "url": null
+        },
+        {
+          "title": "Your university writing center or librarian",
+          "detail": "Use your university website to find the right service. No appointment is booked here.",
+          "url": null
+        },
+        {
+          "title": "APA official guidance",
+          "url": "https://apastyle.apa.org/style-grammar-guidelines/citations/basic-principles",
+          "detail": "Check author-date citation guidance."
+        },
+        {
+          "title": "MLA official guidance",
+          "url": "https://style.mla.org/in-text-citations-overview/",
+          "detail": "Check in-text citations."
+        },
+        {
+          "title": "IEEE official guide",
+          "url": "https://journals.ieeeauthorcenter.ieee.org/wp-content/uploads/IEEE-Reference-Guide.pdf",
+          "detail": "Check numbered references."
+        }
+      ],
+      "latency_ms": 0.02
+    }
+  },
+  {
+    "case_id": "IC-004",
+    "expected_status": "needs_context",
+    "passed": true,
+    "response": {
+      "response_id": "22fd209a-49b8-4f7f-910c-5d45dc760fd5",
+      "status": "needs_context",
+      "message": "Can you open the original source?",
+      "hint": null,
+      "label": null,
+      "evidence": null,
+      "uncertainty_note": "I am not sure. Can you open the original source?",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.18
+    }
+  },
+  {
+    "case_id": "IC-005",
+    "expected_status": "needs_context",
+    "passed": true,
+    "response": {
+      "response_id": "64ca8383-635a-4935-a242-ae8ce0e6ebe9",
+      "status": "needs_context",
+      "message": "What is the main claim the conclusion needs to address?",
+      "hint": null,
+      "label": null,
+      "evidence": null,
+      "uncertainty_note": "I am not sure. What is the main claim the conclusion needs to address?",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.18
+    }
+  },
+  {
+    "case_id": "IC-006",
+    "expected_status": "needs_context",
+    "passed": true,
+    "response": {
+      "response_id": "686f4fd0-fda5-45e8-9b37-7b436d360f0a",
+      "status": "needs_context",
+      "message": "Do you have the publisher's page or library record?",
+      "hint": null,
+      "label": null,
+      "evidence": null,
+      "uncertainty_note": "I am not sure. Do you have the publisher's page or library record?",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.17
+    }
+  }
+]

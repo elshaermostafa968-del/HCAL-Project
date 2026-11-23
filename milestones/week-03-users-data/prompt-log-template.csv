@@ -1,0 +1,4 @@
+entry_id,week,date,tool_name,exact_prompt,output_or_artifact,team_changes,why_changed,status
+pending,3,,,,,,,Recover actual historical prompts; do not invent
+pending,4,,,,,,,Recover actual historical prompts; do not invent
+pending,5,,,,,,,Record actual implementation prompts and review edits

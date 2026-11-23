@@ -1,0 +1,39 @@
+digraph G {
+ graph [rankdir=TB,bgcolor="white",pad=".3",nodesep=".25",ranksep=".3"];
+ node [shape=box,style="rounded,filled",fillcolor="#f4efec",color="#315d50",fontname="Helvetica",fontsize=12,margin=".18,.12"];
+ edge [fontname="Helvetica",fontsize=10,color="#6c7e73"];
+ start [shape=oval,label="START: AI greeting, scope, worked example"];
+ quick [label="Quick replies + style / focus selection"];
+ input [label="Student fictional excerpt + question"];
+ check [shape=diamond,label="S1: scope + context?"];
+ scope [label="Refuse assignment generation
+Re-offer coaching"];
+ context [label="Ask one clarifying question"];
+ retrieve [shape=diamond,label="S2: strong rule match?"];
+ unsure [label="UNCERTAINTY
+More context or official source",style="rounded,dashed"];
+ call [label="S3 prompt + S4 call
+Explicit local OR configured live provider"];
+ retry [label="Error: 10-second timeout
+Retry once, then calm fallback",style="rounded,dashed"];
+ validate [shape=diamond,label="S5: grounded JSON?"];
+ card [label="S6: feedback card
+Rule + source + text label + hint + evidence"];
+ follow [label="Previous / next hint | Why? | Source only
+Edit last | Check another | Done"];
+ human [label="HUMAN OPTIONS (always reachable)
+Instructor / writing center / librarian
+After two unhelpful ratings or failed retry",peripheries=2];
+ end [shape=oval,label="CLOSURE: summary + rating + Clear chat"];
+ start -> quick -> input -> check;
+ check -> scope [label="Out of scope"]; scope -> quick;
+ check -> context [label="Too little"]; context -> input;
+ check -> retrieve [label="Enough context"];
+ retrieve -> unsure [label="Weak / conflict"]; retrieve -> call [label="Strong"];
+ call -> retry [label="API failure"]; call -> validate [label="Response"];
+ retry -> validate [label="Retry works"];retry -> human [label="Fails"];
+ validate -> unsure [label="Reject"];validate -> card [label="Accept"];
+ card -> follow; follow -> call [label="Hint"];follow -> quick [label="Another"];
+ follow -> end [label="Done"];unsure -> human; quick -> human [style=dashed];card -> human [style=dashed,label="2 unhelpful"];
+ human -> end;
+}
