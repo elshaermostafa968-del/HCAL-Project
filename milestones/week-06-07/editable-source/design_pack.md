@@ -4,7 +4,7 @@ Team name: Academic Writing Coach. Members: MEMBERS_PENDING. Project: Academic W
 
 This design pack describes a working English-first teaching prototype. The system explains one source-linked rule and offers hints; students revise their own fictional text. The default mode is deterministic local feedback, clearly labelled as not a live model. Gemini/OpenAI mode is available through the team's own backend, but no successful live API response is claimed without actual capture evidence.
 
-Submission status: documents, code, and synthetic tests are prepared; the team records its own 3–5 minute video, recovers any missing historical prompts, confirms its membership/licensing information, and ensures each member commits from their own account. No assistant-authored commit can satisfy a member's own-account requirement.
+Submission status: documents, code, and synthetic tests are prepared; the team records its own 3–5 minute video, recovers any missing historical prompts, confirms its membership/licensing information, and ensures each member commits from their own account. Each member must make a genuine commit from their own account.
 
 # 2. Personas (revised)
 
