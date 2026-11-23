@@ -1,0 +1,13 @@
+flowchart LR
+ U[Student browser: semantic HTML, CSS, JS] -->|JSON POST /chat| S1[S1 Safeguards: length, scope, context]
+ S1 --> S2[S2 TRANSPARENCY: lexical retriever and similarity]
+ D[(40 synthetic cases and public source links)] --> S2
+ S2 --> S3[S3 Prompt: one rule, no rewrite, label, JSON]
+ S3 --> S4[S4 Safeguard: backend-only LLM client, timeout and retry]
+ S4 <-->|Configured live mode only| L[Gemini or OpenAI API]
+ S4 --> S5[S5 TRANSPARENCY: exact extractive output validator]
+ S5 --> S6[S6 TRANSPARENCY: source, rule type, hint, uncertainty]
+ S6 --> U
+ U -->|POST /feedback| F[Choice and category log, no drafts]
+ E[40-case evaluation harness] -->|TestClient /chat| S1
+ U -->|GET /health| H[Provider status, dataset counts, no secrets]

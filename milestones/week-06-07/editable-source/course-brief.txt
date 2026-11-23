@@ -1,0 +1,116 @@
+*Weeks 6 and 7: Onboarding, test set, and demo (Milestone 3)*
+
+*What your team does:*
+
+1. Design the three-stage onboarding for your chatbot.
+2. Fill the Feature Choice Board.
+3. Write the accessibility plan.
+4. Build the full test set.
+5. Record a demo video of your chatbot.
+6. Put the revised design pack together and keep your prompt log.
+
+*What to present at the check-in*
+
+*1. Onboarding storyboard.* Show the screens or messages for each of the three stages:
+- The system does it: the chatbot shows the user an example of what it can do.
+- Co-pilot: the user tries a task with guidance from the chatbot.
+- The user does it: the user works alone, and help stays available on request.
+
+Show how each of your three personas moves through the stages, and where your principle feature first appears.
+
+*2. Feature Choice Board (6 to 9 features).*
+For each feature, write:
+- what it does
+- which persona it serves
+- which level of your HAI Principle Ladder it supports
+- whether it is core or optional for the user
+
+*3. Accessibility plan.*
+It must cover:
+- your documents (headings, readable fonts, alt text for diagrams, contrast)
+- your chat interface (keyboard use, screen reader labels, text size, status shown in words and not only in colour)
+- the accessibility need of your persona, and how the design meets it
+- how you will test it
+
+*4. Full test set (30 or more labeled prompts).*
+Include prompts that test your principle feature, and prompts written from each persona's point of view.
+
+*5. Final design pack (Milestone 3).*
+One organized file with the revised personas, journey maps, onboarding storyboard, Choice Board, and accessibility plan.
+
+*6. Demo video (3 to 5 minutes).*
+A screen recording of your own working chatbot, with a voice-over or captions. It must show, in this order:
+- Introduction (about 20 seconds): team name, project name, target users, and your HAI principle.
+- Greeting: the chatbot's first message, including what it can and cannot do.
+- One main task from start to finish: a real user request and the chatbot's real answer from your backend.
+- Your principle feature in action: for example the "Why this?" explanation, the source link, the safety refusal, or the accept/edit/undo control. Say on the video which principle it shows.
+- One problem case: an unclear, out-of-scope, or unsafe request, and how the chatbot recovers (clarifying question, fallback message, or human handover).
+- Closing (about 20 seconds): what works now, and what is still planned.
+
+Rules for the video:
+- Record your own system running. _Slides, mock-ups, or a public AI website do not count._
+- Use only fictional or synthetic data. Do not show API keys or personal information.
+- Make the text on screen large enough to read.
+
+*7. Prompt log entries for both weeks* (Appendix A).
+
+*How to submit (required for marking)*
+
+*Where*
+- Put all documents and the video in your team Drive folder, inside one subfolder named "Week 6-7".
+- Put all code in your team GitHub repository. An empty repository, or code shown only on a slide, counts as no code.
+- Do not change your Drive folder link or repository link. If you must, tell me before the deadline.
+
+*File names.*
+Start every file name with your team name and the week:
+- TeamName_W6-7_Design_Pack.pdf
+- TeamName_W6-7_Test_Set.xlsx
+- TeamName_W6-7_Prompt_Log.pdf
+- TeamName_W6-7_Demo.mp4
+- TeamName_W6-7_Demo_Script.pdf
+
+*File types*
+- Documents must be PDF, Word, or Google Docs with real text. A PDF made of slide images or screenshots will be marked as missing.
+- Slides are allowed only in addition to the document, not instead of it.
+- Do not submit zip or rar files.
+
+*Design pack.*
+Use one file with these exact headings, in this order:
+1. Team card (team name, members, project, HAI principle)
+2. Personas (revised)
+3. Journey maps (revised)
+4. Onboarding storyboard
+5. Feature Choice Board
+6. Accessibility plan
+
+Under every diagram or storyboard image, write 2 to 4 sentences that describe what it shows. Images alone are not marked.
+
+*Test set.*
+Submit a spreadsheet (Excel or Google Sheets) with one prompt per
+
+row and these exact column names:
+- ID
+- Prompt
+- Expected behaviour
+- Type (must be one of: normal, edge case, out of scope, unsafe)
+- Persona
+- Tests principle? (yes or no)
+
+*Demo script.*
+Along with the video, submit a one-page demo script. For each part of the video, write the time (for example 0:40), what is shown, the exact user message, and the exact chatbot reply. The video is marked against this script.
+
+*GitHub*
+- The repository must contain the backend code that produced the demo, and a README.md that says how to run it.
+- Never upload API keys.
+- Every team member must have at least one commit from their own account in these two weeks.
+
+*Deadline*
+- Everything must be in Drive and GitHub before *Sunday, 22/11/2026, 8 pm*.
+- The upload time in Drive and the commit time on GitHub are the proof. Files added or changed after the deadline count as late, and the 20% delay penalty applies.
+
+*Rules for the check-in*
+- Open the files or run the demo. Do not just describe them.
+- Any team member can be asked to explain any output.
+
+
+دي المرحله الي عليها الدور

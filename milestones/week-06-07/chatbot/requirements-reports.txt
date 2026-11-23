@@ -1,0 +1,3 @@
+# Optional, only for rebuilding report PDFs. Also install Graphviz's dot command.
+reportlab>=4,<5
+Pillow>=10,<13

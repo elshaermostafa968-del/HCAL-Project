@@ -8,11 +8,12 @@ A university writing-assistant prototype built around the HAI principle of **Tra
 |---|---|
 | `milestones/week-03-users-data/` | Three fictional personas, bias review, source/permission notes, 40 synthetic cases, report PDF and editable Markdown |
 | `milestones/week-04-plan-metrics/` | Persona journey maps, five measurable targets, Transparency ladder, evaluation plan, blank study records, report PDF and Markdown |
+| `milestones/week-06-07/` | Milestone 3 design pack, test workbook, exact demo script, prompt-log record, and revised onboarding chatbot |
 | `milestones/week-05-chatbot/` | Runnable FastAPI + HTML/CSS/JS chatbot, full dataset, diagrams, report, tests, local evidence, and live-response capture script |
 
 ## Run the chatbot
 
-From `milestones/week-05-chatbot/`, use Python 3.10 or newer:
+For the current Milestone 3 demo use `milestones/week-06-07/chatbot/`. The Week 5 version remains separately preserved. From the selected chatbot folder, use Python 3.10 or newer:
 
 ```sh
 python -m venv .venv

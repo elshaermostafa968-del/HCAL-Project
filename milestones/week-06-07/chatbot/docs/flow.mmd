@@ -1,0 +1,31 @@
+flowchart TD
+ A([Start]) --> B[AI greeting, scope, fictional worked example]
+ B --> C[Quick replies and style selection]
+ C --> D[Student excerpt and question]
+ D --> E{S1: in scope and enough context?}
+ E -->|No: generation request| F[Explain scope and offer coaching]
+ F --> C
+ E -->|No: unclear| G[Ask one context question]
+ G --> D
+ E -->|Yes| H{S2: strong unambiguous evidence?}
+ H -->|No| I[Explicit uncertainty and official source options]
+ H -->|Yes| J[S3 prompt and S4 model/local response]
+ J --> K{Model request succeeds?}
+ K -->|No| L[Retry once with 10-second timeout]
+ L --> M{Retry succeeds?}
+ M -->|No| N[Calm fallback, preserved browser text, Try again]
+ M -->|Yes| O{S5: JSON and exact allowed content valid?}
+ K -->|Yes| O
+ O -->|No| I
+ O -->|Yes| P[S6 card: rule, source, text label, hint 1, evidence panel]
+ P --> Q[Next/previous hint, Why, source only, edit, check another]
+ Q -->|Hint| J
+ Q -->|Check another| C
+ Q -->|Done| R[Closure summary, ratings, Clear chat]
+ I --> Q
+ N -->|Try again| D
+ N --> S[[Human handover options]]
+ C -->|Talk to a person, always available| S
+ P -->|Two unhelpful ratings| S
+ S --> R
+ R --> T([End or new check])

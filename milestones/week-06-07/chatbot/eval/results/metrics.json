@@ -1,0 +1,8 @@
+{
+  "mode": "local",
+  "cases": 40,
+  "passed": 40,
+  "fixture_pass_rate": 1.0,
+  "mean_backend_latency_ms": 0.22,
+  "limitations": "Labelled fixture reuse, not held-out accuracy, provider latency, real model evidence, or usability testing."
+}

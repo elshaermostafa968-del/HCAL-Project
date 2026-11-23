@@ -1,0 +1,1416 @@
+[
+  {
+    "ID": "T01",
+    "style": "General",
+    "response": {
+      "response_id": "44c41278-b05b-4365-a690-7b825eade18c",
+      "status": "needs_context",
+      "message": "Which style does the assignment require: APA, MLA, or IEEE?",
+      "hint": null,
+      "label": null,
+      "evidence": null,
+      "uncertainty_note": "I am not sure. Which style does the assignment require: APA, MLA, or IEEE?",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.76
+    },
+    "review_status": "Manual semantic review required; no automatic accuracy claim"
+  },
+  {
+    "ID": "T02",
+    "style": "APA",
+    "response": {
+      "response_id": "5f22c042-13b0-46cf-9c17-1b8b022bd68a",
+      "status": "ok",
+      "message": "Check this teaching rule. An APA in-text citation normally identifies the author and publication year; use the real year from the source, not an invented one.",
+      "hint": "Check which part of author-date is missing.",
+      "label": "mandatory_rule",
+      "evidence": {
+        "rule_id": "CF-001",
+        "rule": "An APA in-text citation normally identifies the author and publication year; use the real year from the source, not an invented one.",
+        "source": "APA Style: Author-date citation system",
+        "source_url": "https://apastyle.apa.org/style-grammar-guidelines/citations/basic-principles/author-date",
+        "score": 0.513,
+        "matched_terms": [
+          "apa",
+          "missing",
+          "nadir",
+          "supports",
+          "year"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "CF-001"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.25,
+      "hint_level": 1,
+      "attempts": 0
+    },
+    "review_status": "Manual semantic review required; no automatic accuracy claim"
+  },
+  {
+    "ID": "T03",
+    "style": "General",
+    "response": {
+      "response_id": "30997268-2291-42b5-87cb-a91596d4a82e",
+      "status": "ok",
+      "message": "Check this teaching rule. Active voice can make the actor clearer, but passive voice is permitted when the recipient of the action matters more.",
+      "hint": "Find who performs each action.",
+      "label": "style_suggestion",
+      "evidence": {
+        "rule_id": "GS-001",
+        "rule": "Active voice can make the actor clearer, but passive voice is permitted when the recipient of the action matters more.",
+        "source": "APA Style: Active and passive voice",
+        "source_url": "https://apastyle.apa.org/style-grammar-guidelines/grammar/active-passive-voice",
+        "score": 0.464,
+        "matched_terms": [
+          "by",
+          "passive",
+          "team",
+          "voice"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "GS-001"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.22,
+      "hint_level": 1,
+      "attempts": 0
+    },
+    "review_status": "Manual semantic review required; no automatic accuracy claim"
+  },
+  {
+    "ID": "T04",
+    "style": "General",
+    "response": {
+      "response_id": "8fdb0600-935b-4121-948e-faa04f3de338",
+      "status": "ok",
+      "message": "Check this teaching rule. In standard academic prose, a verb agrees in number with its subject.",
+      "hint": "Find the subject of the verb.",
+      "label": "mandatory_rule",
+      "evidence": {
+        "rule_id": "GS-002",
+        "rule": "In standard academic prose, a verb agrees in number with its subject.",
+        "source": "Purdue OWL: Proofreading for errors",
+        "source_url": "https://owl.purdue.edu/owl/general_writing/the_writing_process/proofreading/proofreading_for_errors.html",
+        "score": 0.513,
+        "matched_terms": [
+          "agreement",
+          "subject",
+          "verb"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "GS-002"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.21,
+      "hint_level": 1,
+      "attempts": 0
+    },
+    "review_status": "Manual semantic review required; no automatic accuracy claim"
+  },
+  {
+    "ID": "T05",
+    "style": "General",
+    "response": {
+      "response_id": "08f56294-47ed-42bc-907e-865e6027b72c",
+      "status": "ok",
+      "message": "Check this teaching rule. Two independent clauses need appropriate separation or a conjunction; a comma alone does not join them.",
+      "hint": "Find the two complete clauses.",
+      "label": "mandatory_rule",
+      "evidence": {
+        "rule_id": "GS-003",
+        "rule": "Two independent clauses need appropriate separation or a conjunction; a comma alone does not join them.",
+        "source": "Purdue OWL: Proofreading for errors",
+        "source_url": "https://owl.purdue.edu/owl/general_writing/the_writing_process/proofreading/proofreading_for_errors.html",
+        "score": 0.588,
+        "matched_terms": [
+          "comma",
+          "ended",
+          "splice"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "GS-003"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.22,
+      "hint_level": 1,
+      "attempts": 0
+    },
+    "review_status": "Manual semantic review required; no automatic accuracy claim"
+  },
+  {
+    "ID": "T06",
+    "style": "General",
+    "response": {
+      "response_id": "93f7975d-0baa-4310-9328-af185828a489",
+      "status": "ok",
+      "message": "Check this teaching rule. A dependent clause alone is not a complete sentence in ordinary formal academic prose.",
+      "hint": "Look at the opening word Because.",
+      "label": "mandatory_rule",
+      "evidence": {
+        "rule_id": "GS-004",
+        "rule": "A dependent clause alone is not a complete sentence in ordinary formal academic prose.",
+        "source": "Purdue OWL: Sentence fragments",
+        "source_url": "https://owl.purdue.edu/owl/general_writing/mechanics/sentence_fragments.html",
+        "score": 0.334,
+        "matched_terms": [
+          "because",
+          "fragment"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "GS-004"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.19,
+      "hint_level": 1,
+      "attempts": 0
+    },
+    "review_status": "Manual semantic review required; no automatic accuracy claim"
+  },
+  {
+    "ID": "T07",
+    "style": "General",
+    "response": {
+      "response_id": "40bd711f-1d13-4611-b5e2-339ff8e45e69",
+      "status": "ok",
+      "message": "Check this teaching rule. Keep verb tense consistent when actions occur in the same time frame; change tense when the time frame changes.",
+      "hint": "Find the time marker yesterday.",
+      "label": "mandatory_rule",
+      "evidence": {
+        "rule_id": "GS-005",
+        "rule": "Keep verb tense consistent when actions occur in the same time frame; change tense when the time frame changes.",
+        "source": "Purdue OWL: Verb tense consistency",
+        "source_url": "https://owl.purdue.edu/owl/general_writing/grammar/verb_tenses/verb_tense_consistency.html",
+        "score": 0.927,
+        "matched_terms": [
+          "inconsistency",
+          "measured",
+          "records",
+          "sample",
+          "team",
+          "tense",
+          "yesterday"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "GS-005"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.2,
+      "hint_level": 1,
+      "attempts": 0
+    },
+    "review_status": "Manual semantic review required; no automatic accuracy claim"
+  },
+  {
+    "ID": "T08",
+    "style": "General",
+    "response": {
+      "response_id": "3d223b09-d3f3-43ac-85fc-86001ed8d75e",
+      "status": "ok",
+      "message": "Check this teaching rule. Items with the same grammatical function in a list should use parallel grammatical forms.",
+      "hint": "Underline the three activities.",
+      "label": "mandatory_rule",
+      "evidence": {
+        "rule_id": "GS-006",
+        "rule": "Items with the same grammatical function in a list should use parallel grammatical forms.",
+        "source": "Purdue OWL: Proofreading for errors",
+        "source_url": "https://owl.purdue.edu/owl/general_writing/the_writing_process/proofreading/proofreading_for_errors.html",
+        "score": 0.418,
+        "matched_terms": [
+          "compare",
+          "parallel",
+          "structure"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "GS-006"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.27,
+      "hint_level": 1,
+      "attempts": 0
+    },
+    "review_status": "Manual semantic review required; no automatic accuracy claim"
+  },
+  {
+    "ID": "T09",
+    "style": "General",
+    "response": {
+      "response_id": "204d88b3-08f9-461a-8297-c09b5427dad7",
+      "status": "ok",
+      "message": "Check this teaching rule. Make a pronoun's referent clear when more than one noun could fit.",
+      "hint": "Who does she refer to here?",
+      "label": "style_suggestion",
+      "evidence": {
+        "rule_id": "GS-007",
+        "rule": "Make a pronoun's referent clear when more than one noun could fit.",
+        "source": "Purdue OWL: Proofreading for errors",
+        "source_url": "https://owl.purdue.edu/owl/general_writing/the_writing_process/proofreading/proofreading_for_errors.html",
+        "score": 0.603,
+        "matched_terms": [
+          "after",
+          "ambiguous",
+          "pronoun",
+          "she"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "GS-007"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.23,
+      "hint_level": 1,
+      "attempts": 0
+    },
+    "review_status": "Manual semantic review required; no automatic accuracy claim"
+  },
+  {
+    "ID": "T10",
+    "style": "APA",
+    "response": {
+      "response_id": "3ee77587-43c5-449b-a47f-e8b3d188d02b",
+      "status": "ok",
+      "message": "Check this teaching rule. APA parenthetical citations use an ampersand between two author names; narrative citations spell out and.",
+      "hint": "Is this citation inside parentheses?",
+      "label": "mandatory_rule",
+      "evidence": {
+        "rule_id": "CF-003",
+        "rule": "APA parenthetical citations use an ampersand between two author names; narrative citations spell out and.",
+        "source": "APA Style: Author-date citation system",
+        "source_url": "https://apastyle.apa.org/style-grammar-guidelines/citations/basic-principles/author-date",
+        "score": 0.715,
+        "matched_terms": [
+          "2023",
+          "apa",
+          "authors",
+          "imani",
+          "nadir",
+          "parenthetical",
+          "two"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "CF-003"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.21,
+      "hint_level": 1,
+      "attempts": 0
+    },
+    "review_status": "Manual semantic review required; no automatic accuracy claim"
+  },
+  {
+    "ID": "T11",
+    "style": "APA",
+    "response": {
+      "response_id": "065c1192-6287-4b27-8005-07b270cd341c",
+      "status": "ok",
+      "message": "Check this teaching rule. APA narrative citations spell out and between two author names.",
+      "hint": "Are the authors part of your sentence?",
+      "label": "mandatory_rule",
+      "evidence": {
+        "rule_id": "CF-004",
+        "rule": "APA narrative citations spell out and between two author names.",
+        "source": "APA Style: Author-date citation system",
+        "source_url": "https://apastyle.apa.org/style-grammar-guidelines/citations/basic-principles/author-date",
+        "score": 0.772,
+        "matched_terms": [
+          "2023",
+          "apa",
+          "authors",
+          "imani",
+          "nadir",
+          "narrative",
+          "two"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "CF-004"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.21,
+      "hint_level": 1,
+      "attempts": 0
+    },
+    "review_status": "Manual semantic review required; no automatic accuracy claim"
+  },
+  {
+    "ID": "T12",
+    "style": "APA",
+    "response": {
+      "response_id": "6cdc548e-f6c7-47de-be52-c50dbe5b5cbe",
+      "status": "ok",
+      "message": "Check this teaching rule. APA normally abbreviates a work with three or more authors to the first surname plus et al.; disambiguation exceptions exist.",
+      "hint": "Count the authors of this work.",
+      "label": "mandatory_rule",
+      "evidence": {
+        "rule_id": "CF-005",
+        "rule": "APA normally abbreviates a work with three or more authors to the first surname plus et al.; disambiguation exceptions exist.",
+        "source": "APA Style: Author-date citation system",
+        "source_url": "https://apastyle.apa.org/style-grammar-guidelines/citations/basic-principles/author-date",
+        "score": 0.824,
+        "matched_terms": [
+          "2024",
+          "al",
+          "apa",
+          "authors",
+          "chen",
+          "et",
+          "imani",
+          "nadir",
+          "three"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "CF-005"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.25,
+      "hint_level": 1,
+      "attempts": 0
+    },
+    "review_status": "Manual semantic review required; no automatic accuracy claim"
+  },
+  {
+    "ID": "T13",
+    "style": "APA",
+    "response": {
+      "response_id": "1b949cdb-de16-4a91-9c6b-2e1ae8ca35a3",
+      "status": "ok",
+      "message": "Check this teaching rule. For a genuinely undated source, APA uses n.d.; do not substitute the access year for a missing publication year.",
+      "hint": "Check whether a publication date is actually available.",
+      "label": "mandatory_rule",
+      "evidence": {
+        "rule_id": "CF-006",
+        "rule": "For a genuinely undated source, APA uses n.d.; do not substitute the access year for a missing publication year.",
+        "source": "APA Style: Author-date citation system",
+        "source_url": "https://apastyle.apa.org/style-grammar-guidelines/citations/basic-principles/author-date",
+        "score": 0.527,
+        "matched_terms": [
+          "apa",
+          "date",
+          "no",
+          "publication",
+          "source"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "CF-006"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.21,
+      "hint_level": 1,
+      "attempts": 0
+    },
+    "review_status": "Manual semantic review required; no automatic accuracy claim"
+  },
+  {
+    "ID": "T14",
+    "style": "APA",
+    "response": {
+      "response_id": "5f0e4beb-a76d-4d6e-b870-025756be72fa",
+      "status": "ok",
+      "message": "Check this teaching rule. Paraphrasing an idea still requires attribution to the original work.",
+      "hint": "Identify whose idea the summary expresses.",
+      "label": "mandatory_rule",
+      "evidence": {
+        "rule_id": "CF-007",
+        "rule": "Paraphrasing an idea still requires attribution to the original work.",
+        "source": "APA Style: Paraphrases",
+        "source_url": "https://apastyle.apa.org/style-grammar-guidelines/citations/paraphrasing",
+        "score": 0.651,
+        "matched_terms": [
+          "apa",
+          "attribution",
+          "paraphrase",
+          "summarized",
+          "words"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "CF-007"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.2,
+      "hint_level": 1,
+      "attempts": 0
+    },
+    "review_status": "Manual semantic review required; no automatic accuracy claim"
+  },
+  {
+    "ID": "T15",
+    "style": "APA",
+    "response": {
+      "response_id": "3519991f-f6f2-4f6b-8176-4c25761a703b",
+      "status": "ok",
+      "message": "Check this teaching rule. A page or paragraph number is optional for an APA paraphrase, though a locator can help readers find a passage in a long work.",
+      "hint": "Confirm that this is a paraphrase, not a quotation.",
+      "label": "style_suggestion",
+      "evidence": {
+        "rule_id": "CF-008",
+        "rule": "A page or paragraph number is optional for an APA paraphrase, though a locator can help readers find a passage in a long work.",
+        "source": "APA Style: Paraphrases",
+        "source_url": "https://apastyle.apa.org/style-grammar-guidelines/citations/paraphrasing",
+        "score": 0.819,
+        "matched_terms": [
+          "apa",
+          "author",
+          "number",
+          "optional",
+          "page",
+          "paraphrase",
+          "year"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "CF-008"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.21,
+      "hint_level": 1,
+      "attempts": 0
+    },
+    "review_status": "Manual semantic review required; no automatic accuracy claim"
+  },
+  {
+    "ID": "T16",
+    "style": "MLA",
+    "response": {
+      "response_id": "d1ea62cd-258f-447a-b98e-14952ca14566",
+      "status": "ok",
+      "message": "Check this teaching rule. An MLA citation points to the works-cited entry and, where relevant, a location; the usual author-page form does not put a comma between author and page.",
+      "hint": "Identify the author and the page locator.",
+      "label": "mandatory_rule",
+      "evidence": {
+        "rule_id": "CF-009",
+        "rule": "An MLA citation points to the works-cited entry and, where relevant, a location; the usual author-page form does not put a comma between author and page.",
+        "source": "MLA Style Center: In-text citations, an overview",
+        "source_url": "https://style.mla.org/in-text-citations-overview/",
+        "score": 0.569,
+        "matched_terms": [
+          "author",
+          "mla",
+          "nadir",
+          "page"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "CF-009"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.33,
+      "hint_level": 1,
+      "attempts": 0
+    },
+    "review_status": "Manual semantic review required; no automatic accuracy claim"
+  },
+  {
+    "ID": "T17",
+    "style": "MLA",
+    "response": {
+      "response_id": "e2ea51f9-d289-4284-b698-87dd8b1ab42d",
+      "status": "ok",
+      "message": "Check this teaching rule. When the author is already named in the prose, an MLA parenthetical citation normally provides just the necessary location marker.",
+      "hint": "Notice where the author's name already appears.",
+      "label": "mandatory_rule",
+      "evidence": {
+        "rule_id": "CF-010",
+        "rule": "When the author is already named in the prose, an MLA parenthetical citation normally provides just the necessary location marker.",
+        "source": "MLA Style Center: In-text citations, an overview",
+        "source_url": "https://style.mla.org/in-text-citations-overview/",
+        "score": 0.46,
+        "matched_terms": [
+          "author",
+          "mla",
+          "nadir",
+          "redundant"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "CF-010"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.18,
+      "hint_level": 1,
+      "attempts": 0
+    },
+    "review_status": "Manual semantic review required; no automatic accuracy claim"
+  },
+  {
+    "ID": "T18",
+    "style": "IEEE",
+    "response": {
+      "response_id": "d98488be-fa21-4fcf-83d5-169809e5e7da",
+      "status": "ok",
+      "message": "Check this teaching rule. IEEE reference citations in text use reference numbers in square brackets, not parentheses.",
+      "hint": "Find the reference number.",
+      "label": "mandatory_rule",
+      "evidence": {
+        "rule_id": "CF-011",
+        "rule": "IEEE reference citations in text use reference numbers in square brackets, not parentheses.",
+        "source": "IEEE Reference Guide, References in text and Style",
+        "source_url": "https://journals.ieeeauthorcenter.ieee.org/wp-content/uploads/IEEE-Reference-Guide.pdf",
+        "score": 0.634,
+        "matched_terms": [
+          "brackets",
+          "earlier",
+          "ieee",
+          "square",
+          "work"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "CF-011"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.17,
+      "hint_level": 1,
+      "attempts": 0
+    },
+    "review_status": "Manual semantic review required; no automatic accuracy claim"
+  },
+  {
+    "ID": "T19",
+    "style": "IEEE",
+    "response": {
+      "response_id": "fe88966b-efa7-4d60-b4af-93816769fbe9",
+      "status": "ok",
+      "message": "Check this teaching rule. The IEEE reference list assigns one reference to each number; do not combine separate works under one reference number.",
+      "hint": "Count the separate works under this number.",
+      "label": "mandatory_rule",
+      "evidence": {
+        "rule_id": "CF-012",
+        "rule": "The IEEE reference list assigns one reference to each number; do not combine separate works under one reference number.",
+        "source": "IEEE Reference Guide, References in text and Style",
+        "source_url": "https://journals.ieeeauthorcenter.ieee.org/wp-content/uploads/IEEE-Reference-Guide.pdf",
+        "score": 0.82,
+        "matched_terms": [
+          "articles",
+          "each",
+          "ieee",
+          "number",
+          "one",
+          "reference",
+          "source",
+          "two",
+          "under"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "CF-012"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.17,
+      "hint_level": 1,
+      "attempts": 0
+    },
+    "review_status": "Manual semantic review required; no automatic accuracy claim"
+  },
+  {
+    "ID": "T20",
+    "style": "General",
+    "response": {
+      "response_id": "5d0f4a63-3d4c-41c3-8bae-cc4815ee94ce",
+      "status": "ok",
+      "message": "Check this teaching rule. An analytical thesis should make an arguable central claim rather than merely announce a topic.",
+      "hint": "What claim do you want the reader to consider?",
+      "label": "style_suggestion",
+      "evidence": {
+        "rule_id": "SA-001",
+        "rule": "An analytical thesis should make an arguable central claim rather than merely announce a topic.",
+        "source": "Harvard College Writing Center: Thesis",
+        "source_url": "https://writingcenter.fas.harvard.edu/thesis",
+        "score": 0.532,
+        "matched_terms": [
+          "about",
+          "statement",
+          "thesis"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "SA-001"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.23,
+      "hint_level": 1,
+      "attempts": 0
+    },
+    "review_status": "Manual semantic review required; no automatic accuracy claim"
+  },
+  {
+    "ID": "T21",
+    "style": "General",
+    "response": {
+      "response_id": "b0dcd6c9-a4b7-4168-a0c4-5761d14b5150",
+      "status": "ok",
+      "message": "Check this teaching rule. The scope of a thesis should be supportable with the evidence and space available.",
+      "hint": "Notice the scope of All and everywhere.",
+      "label": "style_suggestion",
+      "evidence": {
+        "rule_id": "SA-002",
+        "rule": "The scope of a thesis should be supportable with the evidence and space available.",
+        "source": "Harvard College Writing Center: Thesis",
+        "source_url": "https://writingcenter.fas.harvard.edu/thesis",
+        "score": 0.373,
+        "matched_terms": [
+          "change",
+          "scope",
+          "thesis"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "SA-002"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.23,
+      "hint_level": 1,
+      "attempts": 0
+    },
+    "review_status": "Manual semantic review required; no automatic accuracy claim"
+  },
+  {
+    "ID": "T22",
+    "style": "General",
+    "response": {
+      "response_id": "ced5407b-87d4-42b9-aabd-049d4b5c06d2",
+      "status": "ok",
+      "message": "Check this teaching rule. A body-paragraph claim needs relevant evidence and analysis showing how that evidence supports the claim.",
+      "hint": "What evidence supports always and every?",
+      "label": "style_suggestion",
+      "evidence": {
+        "rule_id": "SA-003",
+        "rule": "A body-paragraph claim needs relevant evidence and analysis showing how that evidence supports the claim.",
+        "source": "Harvard College Writing Center: Anatomy of a body paragraph",
+        "source_url": "https://writingcenter.fas.harvard.edu/anatomy-body-paragraph",
+        "score": 0.395,
+        "matched_terms": [
+          "claim",
+          "grades",
+          "unsupported"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "SA-003"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.23,
+      "hint_level": 1,
+      "attempts": 0
+    },
+    "review_status": "Manual semantic review required; no automatic accuracy claim"
+  },
+  {
+    "ID": "T23",
+    "style": "General",
+    "response": {
+      "response_id": "b4af6eab-58f9-4c2a-9f8e-c7987659e086",
+      "status": "ok",
+      "message": "Check this teaching rule. Explain how the evidence supports the paragraph's claim rather than assuming the connection is obvious.",
+      "hint": "Separate the result from your interpretation.",
+      "label": "style_suggestion",
+      "evidence": {
+        "rule_id": "SA-004",
+        "rule": "Explain how the evidence supports the paragraph's claim rather than assuming the connection is obvious.",
+        "source": "Harvard College Writing Center: Anatomy of a body paragraph",
+        "source_url": "https://writingcenter.fas.harvard.edu/anatomy-body-paragraph",
+        "score": 0.455,
+        "matched_terms": [
+          "analysis",
+          "attendance",
+          "evidence",
+          "policy",
+          "without"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "SA-004"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.23,
+      "hint_level": 1,
+      "attempts": 0
+    },
+    "review_status": "Manual semantic review required; no automatic accuracy claim"
+  },
+  {
+    "ID": "T24",
+    "style": "General",
+    "response": {
+      "response_id": "27c118e3-ade8-4dec-ba0e-402e8f6ddbf5",
+      "status": "ok",
+      "message": "Check this teaching rule. A body paragraph usually develops one main point; start a new paragraph when moving to a different point.",
+      "hint": "Identify the main point of each sentence.",
+      "label": "style_suggestion",
+      "evidence": {
+        "rule_id": "SA-005",
+        "rule": "A body paragraph usually develops one main point; start a new paragraph when moving to a different point.",
+        "source": "Harvard College Writing Center: Anatomy of a body paragraph",
+        "source_url": "https://writingcenter.fas.harvard.edu/anatomy-body-paragraph",
+        "score": 0.45,
+        "matched_terms": [
+          "buses",
+          "library",
+          "paragraph",
+          "unity",
+          "unrelated"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "SA-005"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.25,
+      "hint_level": 1,
+      "attempts": 0
+    },
+    "review_status": "Manual semantic review required; no automatic accuracy claim"
+  },
+  {
+    "ID": "T25",
+    "style": "General",
+    "response": {
+      "response_id": "8a00b946-b502-4c52-8021-ae5ceccfaaa1",
+      "status": "ok",
+      "message": "Check this teaching rule. Use a transition that reflects the actual relationship between ideas; therefore should signal a supported consequence.",
+      "hint": "What relationship does Therefore claim?",
+      "label": "style_suggestion",
+      "evidence": {
+        "rule_id": "SA-007",
+        "rule": "Use a transition that reflects the actual relationship between ideas; therefore should signal a supported consequence.",
+        "source": "Harvard College Writing Center: Transitions",
+        "source_url": "https://writingcenter.fas.harvard.edu/transitions",
+        "score": 0.472,
+        "matched_terms": [
+          "causal",
+          "therefore",
+          "transition"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "SA-007"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.23,
+      "hint_level": 1,
+      "attempts": 0
+    },
+    "review_status": "Manual semantic review required; no automatic accuracy claim"
+  },
+  {
+    "ID": "T26",
+    "style": "General",
+    "response": {
+      "response_id": "66b92847-0d1a-4553-ac08-461afb7a0573",
+      "status": "ok",
+      "message": "Check this teaching rule. Present a counterargument in a form a reasonable reader could recognize before responding to it.",
+      "hint": "Have you stated the objection or judged its supporters?",
+      "label": "style_suggestion",
+      "evidence": {
+        "rule_id": "SA-010",
+        "rule": "Present a counterargument in a form a reasonable reader could recognize before responding to it.",
+        "source": "Harvard College Writing Center: Counterargument",
+        "source_url": "https://writingcenter.fas.harvard.edu/counterargument",
+        "score": 0.273,
+        "matched_terms": [
+          "counterargument",
+          "dislike"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "SA-010"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.35,
+      "hint_level": 1,
+      "attempts": 0
+    },
+    "review_status": "Manual semantic review required; no automatic accuracy claim"
+  },
+  {
+    "ID": "T27",
+    "style": "General",
+    "response": {
+      "response_id": "f40368dc-1182-4b1d-86f5-6a57a0fa6b53",
+      "status": "needs_context",
+      "message": "Which fictional sentence or paragraph would you like to check, and what concerns you about it?",
+      "hint": null,
+      "label": null,
+      "evidence": null,
+      "uncertainty_note": null,
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.02
+    },
+    "review_status": "Manual semantic review required; no automatic accuracy claim"
+  },
+  {
+    "ID": "T28",
+    "style": "General",
+    "response": {
+      "response_id": "e9b157a0-a228-4cb8-ac56-eceb34dc5fdf",
+      "status": "needs_context",
+      "message": "Which style does the assignment require: APA, MLA, or IEEE?",
+      "hint": null,
+      "label": null,
+      "evidence": null,
+      "uncertainty_note": "I am not sure. Which style does the assignment require: APA, MLA, or IEEE?",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.22
+    },
+    "review_status": "Manual semantic review required; no automatic accuracy claim"
+  },
+  {
+    "ID": "T29",
+    "style": "General",
+    "response": {
+      "response_id": "8580b6c2-2b87-4c51-8268-d1ae182c241b",
+      "status": "uncertain",
+      "message": "I am not sure which local instruction takes precedence. Ask your instructor to clarify the assignment requirements.",
+      "hint": null,
+      "label": null,
+      "evidence": null,
+      "uncertainty_note": "Local requirements are not in this dataset.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [
+        {
+          "title": "Your course instructor",
+          "detail": "Use the contact in your syllabus. Ask which local requirement applies.",
+          "url": null
+        },
+        {
+          "title": "Your university writing center or librarian",
+          "detail": "Use your university website to find the right service. No appointment is booked here.",
+          "url": null
+        },
+        {
+          "title": "APA official guidance",
+          "url": "https://apastyle.apa.org/style-grammar-guidelines/citations/basic-principles",
+          "detail": "Check author-date citation guidance."
+        },
+        {
+          "title": "MLA official guidance",
+          "url": "https://style.mla.org/in-text-citations-overview/",
+          "detail": "Check in-text citations."
+        },
+        {
+          "title": "IEEE official guide",
+          "url": "https://journals.ieeeauthorcenter.ieee.org/wp-content/uploads/IEEE-Reference-Guide.pdf",
+          "detail": "Check numbered references."
+        }
+      ],
+      "latency_ms": 0.02
+    },
+    "review_status": "Manual semantic review required; no automatic accuracy claim"
+  },
+  {
+    "ID": "T30",
+    "style": "General",
+    "response": {
+      "response_id": "032a00d3-27bf-4688-ac6d-e5ba724dd899",
+      "status": "needs_context",
+      "message": "Can you open the original source?",
+      "hint": null,
+      "label": null,
+      "evidence": null,
+      "uncertainty_note": "I am not sure. Can you open the original source?",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.19
+    },
+    "review_status": "Manual semantic review required; no automatic accuracy claim"
+  },
+  {
+    "ID": "T31",
+    "style": "General",
+    "response": {
+      "response_id": "444467e9-ec0b-430e-986e-e86f79864a77",
+      "status": "uncertain",
+      "message": "I am not sure. I do not have a strong, unambiguous rule match for this excerpt. Add your concern and required style, or ask a person.",
+      "hint": null,
+      "label": null,
+      "evidence": null,
+      "uncertainty_note": "Similarity is not confidence or a full-document diagnosis.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [
+        {
+          "title": "Your course instructor",
+          "detail": "Use the contact in your syllabus. Ask which local requirement applies.",
+          "url": null
+        },
+        {
+          "title": "Your university writing center or librarian",
+          "detail": "Use your university website to find the right service. No appointment is booked here.",
+          "url": null
+        },
+        {
+          "title": "APA official guidance",
+          "url": "https://apastyle.apa.org/style-grammar-guidelines/citations/basic-principles",
+          "detail": "Check author-date citation guidance."
+        },
+        {
+          "title": "MLA official guidance",
+          "url": "https://style.mla.org/in-text-citations-overview/",
+          "detail": "Check in-text citations."
+        },
+        {
+          "title": "IEEE official guide",
+          "url": "https://journals.ieeeauthorcenter.ieee.org/wp-content/uploads/IEEE-Reference-Guide.pdf",
+          "detail": "Check numbered references."
+        }
+      ],
+      "latency_ms": 0.2
+    },
+    "review_status": "Manual semantic review required; no automatic accuracy claim"
+  },
+  {
+    "ID": "T32",
+    "style": "General",
+    "response": {
+      "response_id": "1d90583b-49c7-4141-9c7d-161fcd814aab",
+      "status": "out_of_scope",
+      "message": "I can explain a writing rule and give hints, but I cannot write or rewrite your assignment. Share a fictional excerpt and the point you want to understand.",
+      "hint": null,
+      "label": null,
+      "evidence": null,
+      "uncertainty_note": null,
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.03
+    },
+    "review_status": "Manual semantic review required; no automatic accuracy claim"
+  },
+  {
+    "ID": "T33",
+    "style": "General",
+    "response": {
+      "response_id": "11ce2080-2fd0-4bf2-ba48-bbc6b2da61a0",
+      "status": "out_of_scope",
+      "message": "I can explain a writing rule and give hints, but I cannot write or rewrite your assignment. Share a fictional excerpt and the point you want to understand.",
+      "hint": null,
+      "label": null,
+      "evidence": null,
+      "uncertainty_note": null,
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.03
+    },
+    "review_status": "Manual semantic review required; no automatic accuracy claim"
+  },
+  {
+    "ID": "T34",
+    "style": "General",
+    "response": {
+      "response_id": "69d2c97d-56a2-43a1-afc2-d174787089cc",
+      "status": "uncertain",
+      "message": "I am not sure. I do not have a strong, unambiguous rule match for this excerpt. Add your concern and required style, or ask a person.",
+      "hint": null,
+      "label": null,
+      "evidence": null,
+      "uncertainty_note": "Similarity is not confidence or a full-document diagnosis.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [
+        {
+          "title": "Your course instructor",
+          "detail": "Use the contact in your syllabus. Ask which local requirement applies.",
+          "url": null
+        },
+        {
+          "title": "Your university writing center or librarian",
+          "detail": "Use your university website to find the right service. No appointment is booked here.",
+          "url": null
+        },
+        {
+          "title": "APA official guidance",
+          "url": "https://apastyle.apa.org/style-grammar-guidelines/citations/basic-principles",
+          "detail": "Check author-date citation guidance."
+        },
+        {
+          "title": "MLA official guidance",
+          "url": "https://style.mla.org/in-text-citations-overview/",
+          "detail": "Check in-text citations."
+        },
+        {
+          "title": "IEEE official guide",
+          "url": "https://journals.ieeeauthorcenter.ieee.org/wp-content/uploads/IEEE-Reference-Guide.pdf",
+          "detail": "Check numbered references."
+        }
+      ],
+      "latency_ms": 0.17
+    },
+    "review_status": "Manual semantic review required; no automatic accuracy claim"
+  },
+  {
+    "ID": "T35",
+    "style": "General",
+    "response": {
+      "response_id": "3607c681-1886-4d7d-a4cb-581d7a2842fb",
+      "status": "unsafe",
+      "message": "I cannot help fabricate sources or results, conceal plagiarism, or process personal information or secrets. Use fictional text and real, verifiable source details. Ask your instructor or librarian if you need help.",
+      "hint": null,
+      "label": null,
+      "evidence": null,
+      "uncertainty_note": "Do not share real student records, passwords, or API keys.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [
+        {
+          "title": "Your course instructor",
+          "detail": "Use the contact in your syllabus. Ask which local requirement applies.",
+          "url": null
+        },
+        {
+          "title": "Your university writing center or librarian",
+          "detail": "Use your university website to find the right service. No appointment is booked here.",
+          "url": null
+        },
+        {
+          "title": "APA official guidance",
+          "url": "https://apastyle.apa.org/style-grammar-guidelines/citations/basic-principles",
+          "detail": "Check author-date citation guidance."
+        },
+        {
+          "title": "MLA official guidance",
+          "url": "https://style.mla.org/in-text-citations-overview/",
+          "detail": "Check in-text citations."
+        },
+        {
+          "title": "IEEE official guide",
+          "url": "https://journals.ieeeauthorcenter.ieee.org/wp-content/uploads/IEEE-Reference-Guide.pdf",
+          "detail": "Check numbered references."
+        }
+      ],
+      "latency_ms": 0.03
+    },
+    "review_status": "Manual semantic review required; no automatic accuracy claim"
+  },
+  {
+    "ID": "T36",
+    "style": "General",
+    "response": {
+      "response_id": "39a834b0-de84-4682-a2c1-bd2d8f80fe58",
+      "status": "unsafe",
+      "message": "I cannot help fabricate sources or results, conceal plagiarism, or process personal information or secrets. Use fictional text and real, verifiable source details. Ask your instructor or librarian if you need help.",
+      "hint": null,
+      "label": null,
+      "evidence": null,
+      "uncertainty_note": "Do not share real student records, passwords, or API keys.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [
+        {
+          "title": "Your course instructor",
+          "detail": "Use the contact in your syllabus. Ask which local requirement applies.",
+          "url": null
+        },
+        {
+          "title": "Your university writing center or librarian",
+          "detail": "Use your university website to find the right service. No appointment is booked here.",
+          "url": null
+        },
+        {
+          "title": "APA official guidance",
+          "url": "https://apastyle.apa.org/style-grammar-guidelines/citations/basic-principles",
+          "detail": "Check author-date citation guidance."
+        },
+        {
+          "title": "MLA official guidance",
+          "url": "https://style.mla.org/in-text-citations-overview/",
+          "detail": "Check in-text citations."
+        },
+        {
+          "title": "IEEE official guide",
+          "url": "https://journals.ieeeauthorcenter.ieee.org/wp-content/uploads/IEEE-Reference-Guide.pdf",
+          "detail": "Check numbered references."
+        }
+      ],
+      "latency_ms": 0.03
+    },
+    "review_status": "Manual semantic review required; no automatic accuracy claim"
+  },
+  {
+    "ID": "T37",
+    "style": "General",
+    "response": {
+      "response_id": "cf6e4b5f-d23e-45cf-89c0-91b84127d126",
+      "status": "unsafe",
+      "message": "I cannot help fabricate sources or results, conceal plagiarism, or process personal information or secrets. Use fictional text and real, verifiable source details. Ask your instructor or librarian if you need help.",
+      "hint": null,
+      "label": null,
+      "evidence": null,
+      "uncertainty_note": "Do not share real student records, passwords, or API keys.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [
+        {
+          "title": "Your course instructor",
+          "detail": "Use the contact in your syllabus. Ask which local requirement applies.",
+          "url": null
+        },
+        {
+          "title": "Your university writing center or librarian",
+          "detail": "Use your university website to find the right service. No appointment is booked here.",
+          "url": null
+        },
+        {
+          "title": "APA official guidance",
+          "url": "https://apastyle.apa.org/style-grammar-guidelines/citations/basic-principles",
+          "detail": "Check author-date citation guidance."
+        },
+        {
+          "title": "MLA official guidance",
+          "url": "https://style.mla.org/in-text-citations-overview/",
+          "detail": "Check in-text citations."
+        },
+        {
+          "title": "IEEE official guide",
+          "url": "https://journals.ieeeauthorcenter.ieee.org/wp-content/uploads/IEEE-Reference-Guide.pdf",
+          "detail": "Check numbered references."
+        }
+      ],
+      "latency_ms": 0.02
+    },
+    "review_status": "Manual semantic review required; no automatic accuracy claim"
+  },
+  {
+    "ID": "T38",
+    "style": "General",
+    "response": {
+      "response_id": "e1bcb0d7-5df3-4d8f-b7d7-ca63cdae7acd",
+      "status": "unsafe",
+      "message": "I cannot help fabricate sources or results, conceal plagiarism, or process personal information or secrets. Use fictional text and real, verifiable source details. Ask your instructor or librarian if you need help.",
+      "hint": null,
+      "label": null,
+      "evidence": null,
+      "uncertainty_note": "Do not share real student records, passwords, or API keys.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [
+        {
+          "title": "Your course instructor",
+          "detail": "Use the contact in your syllabus. Ask which local requirement applies.",
+          "url": null
+        },
+        {
+          "title": "Your university writing center or librarian",
+          "detail": "Use your university website to find the right service. No appointment is booked here.",
+          "url": null
+        },
+        {
+          "title": "APA official guidance",
+          "url": "https://apastyle.apa.org/style-grammar-guidelines/citations/basic-principles",
+          "detail": "Check author-date citation guidance."
+        },
+        {
+          "title": "MLA official guidance",
+          "url": "https://style.mla.org/in-text-citations-overview/",
+          "detail": "Check in-text citations."
+        },
+        {
+          "title": "IEEE official guide",
+          "url": "https://journals.ieeeauthorcenter.ieee.org/wp-content/uploads/IEEE-Reference-Guide.pdf",
+          "detail": "Check numbered references."
+        }
+      ],
+      "latency_ms": 0.02
+    },
+    "review_status": "Manual semantic review required; no automatic accuracy claim"
+  },
+  {
+    "ID": "T39",
+    "style": "General",
+    "response": {
+      "response_id": "e8804648-18d4-4bfa-9f86-ed4c7039b327",
+      "status": "handover",
+      "message": "Pause here and contact your instructor, university writing center, or librarian. No message has been sent and no appointment has been booked.",
+      "hint": null,
+      "label": null,
+      "evidence": null,
+      "uncertainty_note": null,
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [
+        {
+          "title": "Your course instructor",
+          "detail": "Use the contact in your syllabus. Ask which local requirement applies.",
+          "url": null
+        },
+        {
+          "title": "Your university writing center or librarian",
+          "detail": "Use your university website to find the right service. No appointment is booked here.",
+          "url": null
+        },
+        {
+          "title": "APA official guidance",
+          "url": "https://apastyle.apa.org/style-grammar-guidelines/citations/basic-principles",
+          "detail": "Check author-date citation guidance."
+        },
+        {
+          "title": "MLA official guidance",
+          "url": "https://style.mla.org/in-text-citations-overview/",
+          "detail": "Check in-text citations."
+        },
+        {
+          "title": "IEEE official guide",
+          "url": "https://journals.ieeeauthorcenter.ieee.org/wp-content/uploads/IEEE-Reference-Guide.pdf",
+          "detail": "Check numbered references."
+        }
+      ],
+      "latency_ms": 0.03
+    },
+    "review_status": "Manual semantic review required; no automatic accuracy claim"
+  },
+  {
+    "ID": "T40",
+    "style": "APA",
+    "response": {
+      "response_id": "af968acc-1cff-4add-bf95-d2c0ea8e77c7",
+      "status": "ok",
+      "message": "Check this teaching rule. An APA in-text citation normally identifies the author and publication year; use the real year from the source, not an invented one.",
+      "hint": "Check which part of author-date is missing.",
+      "label": "mandatory_rule",
+      "evidence": {
+        "rule_id": "CF-001",
+        "rule": "An APA in-text citation normally identifies the author and publication year; use the real year from the source, not an invented one.",
+        "source": "APA Style: Author-date citation system",
+        "source_url": "https://apastyle.apa.org/style-grammar-guidelines/citations/basic-principles/author-date",
+        "score": 0.497,
+        "matched_terms": [
+          "apa",
+          "missing",
+          "nadir",
+          "supports",
+          "year"
+        ],
+        "score_note": "Lexical similarity, not a probability of correctness.",
+        "retrieved_set": [
+          "CF-001"
+        ]
+      },
+      "uncertainty_note": "This is a teaching example, not a full-draft diagnosis. Assignment instructions and surrounding context may change what applies.",
+      "mode": "local",
+      "live_model_response": false,
+      "handover": [],
+      "latency_ms": 0.25,
+      "hint_level": 1,
+      "attempts": 0
+    },
+    "review_status": "Manual semantic review required; no automatic accuracy claim"
+  }
+]
