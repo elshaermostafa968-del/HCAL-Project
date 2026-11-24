@@ -144,3 +144,6 @@ button,strong,b,.who,.badge{font-weight:600}
 .controls select{min-height:38px}
 #onboarding-toggle,#guidance-show,#clear{white-space:nowrap}
 @media(max-width:680px){.message-input textarea{font-size:14px;padding:17px 56px 0 12px}}
+.onboarding-actions{display:flex;align-items:center;gap:14px}
+.barbtn{min-height:32px;padding:3px 12px;font-size:13px;white-space:nowrap}
+@media(max-width:680px){.onboarding-top{flex-wrap:wrap}.onboarding-actions{margin-left:auto}}

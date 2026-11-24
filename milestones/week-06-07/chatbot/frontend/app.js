@@ -3,6 +3,7 @@ const $ = s => document.querySelector(s);
 const chat = $('#chat'), quick = $('#quick'), box = $('#message');
 let busy=false, closed=false, last=null, response=null, hint=1, controller=null;
 let session=crypto.randomUUID();
+let gState='full';
 let stage=1, exampleSeen=false, guidedComplete=false;
 const sample={message:'Check APA missing year: Earlier research supports this claim (Nadir).',style:'APA',category:'Citation & Formatting',hint_level:1};
 function updateStage(){
@@ -11,6 +12,7 @@ function updateStage(){
  $('#onboarding-title').textContent=stage===1?'See an example':stage===2?'Try with guidance':'Work on your own';
  $('#stage-description').textContent=stage===1?'See a worked fictional example. The rule, source, and limits appear with the answer.':stage===2?'Try the fictional citation with guidance. Choose APA, submit it, then inspect Why this rule? and use a hint. Revise it yourself.':'Work independently on a fictional excerpt. Hints, sources, Help, and Talk to a person remain available on request.';
  $('#stage-primary').textContent=stage===1?(exampleSeen?'Continue to co-pilot':'See an example'):stage===2?(guidedComplete?'Continue independently':'Load guided task'):'Restart guided onboarding';
+ const bc=$('#bar-continue');bc.hidden=stage===3||gState==='full';bc.textContent=$('#stage-primary').textContent;
  $('#stage-status').textContent=stage===1?(exampleSeen?'Example complete. Notice the source and Mandatory rule label.':''):stage===2?(guidedComplete?'Guided check complete. Review the evidence, then continue when ready.':'You choose when to move on; no skill score or proficiency claim is made.'):'Independent mode. Request help whenever you want.';
 }
 $('#stage-primary').onclick=()=>{if(busy)return;if(stage===1){if(exampleSeen){stage=2;updateStage();}else{$('#style').value='APA';send({...sample});}}else if(stage===2){if(guidedComplete){stage=3;updateStage();box.value='';initialQuick();box.focus();}else{$('#style').value='APA';box.value=sample.message;say('Guided task: choose APA, send the fictional citation, open Why this rule?, and try one hint. The year must come from the real source, never a guess.');box.focus();}}else{stage=1;exampleSeen=false;guidedComplete=false;updateStage();}};
@@ -66,11 +68,12 @@ $('#about-toggle').onclick=()=>{
  $('#about-toggle').setAttribute('aria-expanded',String(!panel.hidden));
 };
 
-let gState='full';
-function setGuidance(mode){gState=mode;const o=$('#onboarding');o.hidden=mode==='hidden';$('#onboarding-content').hidden=mode!=='full';$('#guidance-show').hidden=mode!=='hidden';}
+
+function setGuidance(mode){gState=mode;{const bc=$('#bar-continue');bc.hidden=stage===3||mode==='full';}const o=$('#onboarding');o.hidden=mode==='hidden';$('#onboarding-content').hidden=mode!=='full';$('#guidance-show').hidden=mode!=='hidden';}
 $('#onboarding-toggle').onclick=()=>{prevG=gState;setGuidance('hidden');};
 let prevG='full';
 $('#guidance-show').onclick=()=>{setGuidance(prevG==='hidden'?'bar':prevG);};
+$('#bar-continue').onclick=()=>$('#stage-primary').click();
 $('#undo-clear').onclick=()=>{if(!clearSnapshot)return;clearTimeout(clearTimer);const s=clearSnapshot;chat.replaceChildren(...s.nodes);quick.replaceChildren(...s.quickNodes);({last,response,hint,closed,session,stage,exampleSeen,guidedComplete}=s);box.value=s.text;$('#style').value=s.style;updateStage();setGuidance(s.guidance);clearSnapshot=null;$('#clear-toast').hidden=true;scroll();};
 const stageAction=$('#stage-primary').onclick;$('#stage-primary').onclick=()=>{stageAction();setGuidance('bar');};
 const skipAction=$('#stage-skip').onclick;$('#stage-skip').onclick=()=>{skipAction();setGuidance('bar');};
