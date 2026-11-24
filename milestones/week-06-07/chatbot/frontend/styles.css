@@ -61,3 +61,66 @@ footer{max-width:none}
 .message-input #send{position:absolute;right:12px;bottom:12px;width:48px;height:48px;padding:0;display:grid;place-items:center;border-radius:50%}
 .message-input #send span{font-size:30px;line-height:1;margin:0;color:#fff}
 @media(max-width:680px){.workspace{padding-left:8px;padding-right:8px}}
+/* Screen-height light interface. */
+html,body{height:100%;overflow:hidden}
+body{font-size:16px;line-height:1.5;background:#f6f5ee;display:flex;flex-direction:column}
+button,select{min-height:44px;font-size:14px}
+button{padding:9px 14px}
+.topbar{position:static;height:72px;min-height:72px;padding:10px 20px;flex-wrap:nowrap;gap:12px;flex-shrink:0}
+.brand{font-size:20px}.mark{width:40px;height:40px;font-size:26px}
+.header-actions{gap:10px;flex-wrap:nowrap}
+.workspace{flex:1;min-height:0;width:100%;max-width:none;padding:12px 16px 8px;margin:0;display:flex;flex-direction:column}
+.conversation{flex:1;min-height:0;display:flex;flex-direction:column;width:100%;border-radius:12px;overflow:hidden}
+.conversation-heading{padding:8px 18px;min-height:50px;flex-shrink:0}
+.conversation-heading h2{font-size:16px}
+.textbutton{font-size:14px;padding:6px 4px}
+#onboarding{margin:0 18px 8px;padding:10px 14px;flex-shrink:0;background:#edf3ed}
+.onboarding-top{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:14px}
+#onboarding h2{font-size:18px;margin:2px 0 4px}
+#onboarding p{font-size:14px;margin:4px 0 8px}
+#onboarding #stage-status{font-size:14px!important;margin-bottom:0}
+.stage-actions button{font-size:14px}
+.session-scroll{flex:1;min-height:0;overflow:auto;overscroll-behavior:contain}
+#chat{height:auto;min-height:0;max-height:none;overflow:visible;padding:14px 18px}
+.entry{margin-bottom:16px;max-width:85%;padding:12px 14px;border:1px solid #d6dfd9;border-radius:12px;background:#fafbf9}
+.entry.user{margin-left:auto;background:#e5eee8;border-color:#9db8aa}
+.entry p,.entry h3{font-family:inherit;font-size:16px;line-height:1.5;letter-spacing:normal}
+.entry h3{font-weight:650;margin:0 0 8px}.who{font-size:14px;letter-spacing:0;text-transform:none}
+.example,.hint,.notice,details,.rating,.rating button,.reason label,.badge{font-size:14px;letter-spacing:0}
+.quick{padding:0 18px 12px;gap:8px}.quick button{font-size:14px;min-height:44px}
+form{position:relative;flex-shrink:0;padding:10px 18px 12px}
+.controls{margin:0 0 8px;gap:10px}.controls label{font-size:14px;gap:10px}
+select{font-size:14px;padding:5px 10px}
+.message-input textarea{font-size:16px;min-height:84px;height:84px;max-height:84px;resize:none;padding:10px 66px 10px 12px;line-height:1.5}
+.message-input #send{width:44px;height:44px;right:10px;bottom:10px}.message-input #send span{font-size:26px}
+.composer-bottom{margin-top:5px}.composer-bottom span{font-size:14px}
+footer{font-size:14px;text-align:center;padding:0 16px 6px;flex-shrink:0;line-height:1.3}
+#clear-toast{position:absolute;left:50%;transform:translateX(-50%);bottom:calc(100% + 8px);z-index:15;display:flex;align-items:center;gap:16px;padding:4px 8px 4px 16px;background:#fff;border:1px solid #9db8aa;border-radius:12px;box-shadow:0 3px 14px #0002;white-space:nowrap;font-size:14px}
+#clear-toast[hidden],[hidden]{display:none!important}
+#about-panel{position:fixed;z-index:30;top:82px;right:20px;bottom:20px;max-width:620px;width:calc(100% - 40px);margin:0;padding:20px;overflow:auto;box-shadow:0 8px 40px #18362d33}
+#about-panel h1{font-size:28px;letter-spacing:0}#about-panel h2{font-size:18px}
+#about-panel p,#about-panel .intro,#about-panel .privacy,#about-panel .guide li,#about-panel .guide h2,.mode{font-size:14px}
+#about-panel .guide li:before{font-size:14px}#about-panel .guide{margin-top:20px}
+dialog p,#contacts h3{font-size:16px}
+@media(max-width:680px){
+ .topbar{height:auto;min-height:68px;padding:8px 10px;flex-wrap:wrap;gap:6px}
+ .brand{font-size:18px}.header-actions{gap:8px}.topbar button{font-size:14px;padding:8px 10px}
+ .workspace{padding:6px 6px 4px}.conversation-heading{padding:4px 10px;min-height:44px}
+ #onboarding{margin:0 10px 6px;padding:8px 10px}
+ #onboarding h2{font-size:16px}.entry{max-width:95%}.entry.user{margin-left:auto}
+ #chat{padding:10px}.quick{padding:0 10px 10px}
+ form{padding:8px 10px}.composer-bottom span{font-size:14px}.controls label{flex-wrap:nowrap}
+ footer{display:none}#about-panel{top:120px;right:10px;width:calc(100% - 20px);bottom:10px}
+}
+@media(max-height:700px){#onboarding #stage-status{display:none}}
+
+.about-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}.about-heading h2{margin:0}
+
+/* Shared type scale and quiet onboarding. */
+body,button,select,textarea,h1,h2,h3{font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+h1,h2,h3{letter-spacing:0;font-weight:700}
+button,strong,b,.who,.badge{font-weight:600}
+.hint{font-size:16px}
+@media(max-width:680px){#onboarding #stage-status{display:none}}
+
+#stage-status:empty{display:none}
