@@ -124,3 +124,23 @@ button,strong,b,.who,.badge{font-weight:600}
 @media(max-width:680px){#onboarding #stage-status{display:none}}
 
 #stage-status:empty{display:none}
+
+/* Second pass: no session bar, controls row carries quick replies and links. */
+.controls{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.quick-slot{flex:1;min-width:0}
+.quick-slot .quick{padding:0;gap:8px}
+.quick-slot:empty{display:none}
+.control-links{margin-left:auto;display:flex;align-items:center;gap:12px}
+.control-links .textbutton{min-height:0;padding:6px 2px}
+
+.message-input textarea{height:56px;min-height:56px;max-height:56px;padding:15px 60px 15px 12px;overflow:hidden}
+.message-input #send{width:38px;height:38px;right:9px;bottom:9px}.message-input #send span{font-size:22px}
+#chat{padding-top:14px}
+@media(max-width:680px){.control-links{margin-left:0}.quick-slot{flex-basis:100%;order:3}.quick-slot .quick{flex-wrap:wrap}}
+#onboarding-toggle{min-height:0;padding:2px}
+#onboarding{padding:8px 14px}
+#step-label{font-weight:650}
+.quick-slot .quick button{min-height:36px;padding:5px 11px;font-size:13px}
+.controls select{min-height:38px}
+#onboarding-toggle,#guidance-show,#clear{white-space:nowrap}
+@media(max-width:680px){.message-input textarea{font-size:14px;padding:17px 56px 0 12px}}

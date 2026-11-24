@@ -6,7 +6,7 @@ let session=crypto.randomUUID();
 let stage=1, exampleSeen=false, guidedComplete=false;
 const sample={message:'Check APA missing year: Earlier research supports this claim (Nadir).',style:'APA',category:'Citation & Formatting',hint_level:1};
 function updateStage(){
- $('#step-label').textContent='Step '+stage+' of 3'+(stage===1?': see an example':'');
+ $('#step-label').textContent='Step '+stage+' of 3'+(stage===1?': see an example':'')+((stage===1&&exampleSeen)||(stage===2&&guidedComplete)?' ✓':'');
  $('#onboarding').classList.toggle('independent',stage===3);
  $('#onboarding-title').textContent=stage===1?'See an example':stage===2?'Try with guidance':'Work on your own';
  $('#stage-description').textContent=stage===1?'See a worked fictional example. The rule, source, and limits appear with the answer.':stage===2?'Try the fictional citation with guidance. Choose APA, submit it, then inspect Why this rule? and use a hint. Revise it yourself.':'Work independently on a fictional excerpt. Hints, sources, Help, and Talk to a person remain available on request.';
@@ -24,7 +24,7 @@ const contacts = [
  {title:'IEEE official guide',url:'https://journals.ieeeauthorcenter.ieee.org/wp-content/uploads/IEEE-Reference-Guide.pdf'}
 ];
 function node(tag,text,cls){const e=document.createElement(tag);if(text)e.textContent=text;if(cls)e.className=cls;return e;}
-function entry(who){const e=node('article',null,'entry '+who.toLowerCase());e.append(node('span',who,'who'));chat.append(e);return e;}
+function entry(who){const e=node('article',null,'entry '+(who==='You'?'user':who.toLowerCase()));e.append(node('span',who,'who'));chat.append(e);return e;}
 function say(text){entry('Coach').append(node('p',text));scroll();}
 function scroll(){requestAnimationFrame(()=>{const area=$('#session-scroll');area.scrollTop=area.scrollHeight;});}
 function button(text,fn){const b=node('button',text);b.type='button';b.onclick=fn;return b;}
@@ -34,7 +34,7 @@ function followQuick(){quick.replaceChildren();
 function welcome(){const e=entry('Coach');e.append(node('p',"I'm an AI and I can make mistakes, so every answer comes with its source."),node('div','Try this fictional example: Earlier research supports this claim (Nadir).\nQuestion: Is an author-date element missing? Choose APA first.','example'));initialQuick();}
 function help(){say('1. Choose a style guide and share a fictional excerpt with one question.\n2. I retrieve one case from 40 synthetic examples. A similarity score is not confidence.\n3. Check the source and distinguish Mandatory rule from Style suggestion.\n4. Revise in your own words. Use Next hint, or contact a person if context is missing.\nLocal mode uses fixed dataset feedback, not a live model. Hosted mode calls a model from this backend, with strict extractive validation.');}
 function choose(type){closed=false;if(type==='citation'&&$('#style').value==='General')$('#style').value='APA';box.value=type==='citation'?'Check APA missing year: Earlier research supports this claim (Nadir).':'';say(type==='citation'?'Choose the style required by your assignment, then check this fictional citation or add another.':'Paste a fictional paragraph and tell me what concerns you.');box.focus();}
-function setBusy(v){if(v&&clearSnapshot){clearSnapshot=null;clearTimeout(clearTimer);$('#clear-toast').hidden=true;}busy=v;$('#send').disabled=v;quick.querySelectorAll('button').forEach(b=>b.disabled=v);$('#status').textContent=v?'Checking the style guide...':'Enter to send · Shift+Enter for a new line';}
+function setBusy(v){if(v&&clearSnapshot){clearSnapshot=null;clearTimeout(clearTimer);$('#clear-toast').hidden=true;}busy=v;$('#send').disabled=v;quick.querySelectorAll('button').forEach(b=>b.disabled=v);$('#status').textContent=v?'Checking the style guide...':'';}
 async function send(payload,showUser=true){if(busy)return;closed=false;last=payload;hint=payload.hint_level;setBusy(true);if(showUser)entry('You').append(node('p',payload.message));scroll();controller=new AbortController();const timer=setTimeout(()=>controller.abort(),28000);
  try{const r=await fetch('/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload),signal:controller.signal});if(!r.ok)throw Error(r.status===422?'Please keep the message between 1 and 4,000 characters and choose a supported style.':'The backend could not complete this request.');response=await r.json();render(response);}
  catch(err){say(err.name==='AbortError'?'The request took too long. Your text is still in this tab. Try again or talk to a person.':err.message+' Your text is still in this tab.');quick.replaceChildren(button('Try again',()=>send(last,false)),button('Talk to a person',handover));}
@@ -51,8 +51,8 @@ function changeHint(delta){if(!last||!response?.evidence)return;const n=Math.min
 function closure(){if(busy)return;closed=true;say(response?.evidence?'Session summary: review '+response.evidence.rule_id+' and apply this rule in your own words: '+response.evidence.rule+' No draft has been rewritten. You can clear this chat or start another check.':'Session paused. Keep your draft and assignment instructions ready for your instructor or writing center. You can clear this chat or start another check.');quick.replaceChildren(button('Clear chat',clearChat),button('Check another',()=>{closed=false;initialQuick();box.focus();}));}
 function handover(){const area=$('#contacts');area.replaceChildren();contacts.forEach(c=>{const s=node('section');s.append(node('h3',c.title));if(c.detail)s.append(node('p',c.detail));if(c.url){const a=node('a','Open official guide');a.href=c.url;a.target='_blank';a.rel='noopener noreferrer';s.append(a);}area.append(s);});$('#handover').showModal();if(!busy)closure();}
 let clearSnapshot=null,clearTimer=null;
-function clearChat(){if(busy){say('Please wait for this check to finish before clearing.');return;}clearSnapshot={nodes:Array.from(chat.childNodes),quickNodes:Array.from(quick.childNodes),last,response,hint,closed,session,stage,exampleSeen,guidedComplete,text:box.value,style:$('#style').value,guidanceOpen:!$('#onboarding-content').hidden};clearTimeout(clearTimer);$('#clear-toast').hidden=false;clearTimer=setTimeout(()=>{clearSnapshot=null;$('#clear-toast').hidden=true;},6000);chat.replaceChildren();last=null;response=null;hint=1;closed=false;session=crypto.randomUUID();stage=1;exampleSeen=false;guidedComplete=false;updateStage();box.value='';welcome();box.focus();}
-$('#composer').onsubmit=e=>{e.preventDefault();const text=box.value.trim();if(!text||busy)return;send({message:text,style:$('#style').value,category:'Auto',hint_level:1});};
+function clearChat(){if(busy){say('Please wait for this check to finish before clearing.');return;}clearSnapshot={nodes:Array.from(chat.childNodes),quickNodes:Array.from(quick.childNodes),last,response,hint,closed,session,stage,exampleSeen,guidedComplete,text:box.value,style:$('#style').value,guidance:gState,prevG};clearTimeout(clearTimer);$('#clear-toast').hidden=false;clearTimer=setTimeout(()=>{clearSnapshot=null;$('#clear-toast').hidden=true;},6000);chat.replaceChildren();last=null;response=null;hint=1;closed=false;session=crypto.randomUUID();stage=1;exampleSeen=false;guidedComplete=false;updateStage();box.value='';welcome();box.focus();}
+$('#composer').onsubmit=e=>{e.preventDefault();const text=box.value.trim();if(!text||busy)return;box.value='';send({message:text,style:$('#style').value,category:'Auto',hint_level:1});};
 box.onkeydown=e=>{if(e.key==='Enter'&&!e.shiftKey&&!e.isComposing){e.preventDefault();$('#composer').requestSubmit();}};
 $('#human').onclick=handover;$('#close-human').onclick=()=>$('#handover').close();$('#clear').onclick=clearChat;$('#help').onclick=help;
 updateStage();
@@ -66,12 +66,21 @@ $('#about-toggle').onclick=()=>{
  $('#about-toggle').setAttribute('aria-expanded',String(!panel.hidden));
 };
 
-function setGuidance(open){$('#onboarding-content').hidden=!open;$('#onboarding-toggle').textContent=open?'Hide guidance':'Show guidance';$('#onboarding-toggle').setAttribute('aria-expanded',String(open));}
-$('#onboarding-toggle').onclick=()=>setGuidance($('#onboarding-content').hidden);
-$('#undo-clear').onclick=()=>{if(!clearSnapshot)return;clearTimeout(clearTimer);const s=clearSnapshot;chat.replaceChildren(...s.nodes);quick.replaceChildren(...s.quickNodes);({last,response,hint,closed,session,stage,exampleSeen,guidedComplete}=s);box.value=s.text;$('#style').value=s.style;updateStage();setGuidance(s.guidanceOpen);clearSnapshot=null;$('#clear-toast').hidden=true;scroll();};
-const stageAction=$('#stage-primary').onclick;$('#stage-primary').onclick=()=>{stageAction();setGuidance(false);};
-const skipAction=$('#stage-skip').onclick;$('#stage-skip').onclick=()=>{skipAction();setGuidance(false);};
-const restartAction=$('#restart-onboarding').onclick;$('#restart-onboarding').onclick=()=>{restartAction();setGuidance(true);};
+let gState='full';
+function setGuidance(mode){gState=mode;const o=$('#onboarding');o.hidden=mode==='hidden';$('#onboarding-content').hidden=mode!=='full';$('#guidance-show').hidden=mode!=='hidden';}
+$('#onboarding-toggle').onclick=()=>{prevG=gState;setGuidance('hidden');};
+let prevG='full';
+$('#guidance-show').onclick=()=>{setGuidance(prevG==='hidden'?'bar':prevG);};
+$('#undo-clear').onclick=()=>{if(!clearSnapshot)return;clearTimeout(clearTimer);const s=clearSnapshot;chat.replaceChildren(...s.nodes);quick.replaceChildren(...s.quickNodes);({last,response,hint,closed,session,stage,exampleSeen,guidedComplete}=s);box.value=s.text;$('#style').value=s.style;updateStage();setGuidance(s.guidance);clearSnapshot=null;$('#clear-toast').hidden=true;scroll();};
+const stageAction=$('#stage-primary').onclick;$('#stage-primary').onclick=()=>{stageAction();setGuidance('bar');};
+const skipAction=$('#stage-skip').onclick;$('#stage-skip').onclick=()=>{skipAction();setGuidance('bar');};
+const restartAction=$('#restart-onboarding').onclick;$('#restart-onboarding').onclick=()=>{restartAction();setGuidance('full');};
 
 $('#close-about').onclick=()=>{$('#about-panel').hidden=true;$('#about-toggle').setAttribute('aria-expanded','false');$('#about-toggle').focus();};
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('#about-panel').hidden)$('#close-about').click();});
+
+// Quick replies sit in the Citation style row once the chat has messages.
+const quickHome=quick.parentNode;
+function placeQuick(){const has=!!chat.querySelector('.entry.user');const slot=$('#quick-slot');if(has&&quick.parentNode!==slot)slot.append(quick);else if(!has&&quick.parentNode!==quickHome)quickHome.append(quick);}
+new MutationObserver(placeQuick).observe(chat,{childList:true});
+placeQuick();
