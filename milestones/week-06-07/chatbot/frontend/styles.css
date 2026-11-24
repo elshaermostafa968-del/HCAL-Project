@@ -10,7 +10,10 @@
 /* Larger type and a single-column chat with optional About information. */
 body{font-size:20px}
 .header-actions{display:flex;gap:12px;align-items:center}
-.workspace{display:block;max-width:1120px;padding-top:28px}
+.workspace{display:block;grid-template-columns:none;width:100%;max-width:none;margin:0;padding:28px 24px 30px}
+.topbar{padding-left:24px;padding-right:24px}
+footer{max-width:none}
+.conversation{width:100%}
 #about-panel[hidden]{display:none!important}
 #about-panel{margin:0 0 24px;padding:24px;background:#fff;border:1px solid var(--line);border-radius:12px}
 #about-panel h1{font-size:38px}
@@ -44,3 +47,17 @@ body{font-size:20px}
 @media(max-width:680px){
  #chat{height:auto;min-height:390px;max-height:none;overflow:visible}
 }
+
+/* One document scroll at every screen size. */
+#chat{height:auto;min-height:260px;max-height:none;overflow:visible}
+.composer-bottom #send{width:52px;height:52px;padding:0;display:grid;place-items:center;border-radius:50%;flex-shrink:0}
+.composer-bottom #send span{font-size:30px;line-height:1;margin:0;color:#fff}
+
+/* Slightly smaller outer margins, with Send inside the writing field. */
+.workspace{padding-left:12px;padding-right:12px}
+.topbar{padding-left:12px;padding-right:12px}
+.message-input{position:relative}
+.message-input textarea{display:block;min-height:150px;padding-right:76px;padding-bottom:70px}
+.message-input #send{position:absolute;right:12px;bottom:12px;width:48px;height:48px;padding:0;display:grid;place-items:center;border-radius:50%}
+.message-input #send span{font-size:30px;line-height:1;margin:0;color:#fff}
+@media(max-width:680px){.workspace{padding-left:8px;padding-right:8px}}
