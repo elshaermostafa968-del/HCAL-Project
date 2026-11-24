@@ -56,3 +56,10 @@ $('#human').onclick=handover;$('#close-human').onclick=()=>$('#handover').close(
 updateStage();
 welcome();
 fetch('/health').then(r=>r.json()).then(d=>{$('#mode').textContent=d.provider==='local'?'LOCAL DEMO · 40 teaching cases\nNo API key. No live model.':d.configured?'LIVE PROVIDER · '+d.provider.toUpperCase()+'\nSynthetic excerpts are sent to this provider.':'PROVIDER NOT CONFIGURED · Add your key on the server.';}).catch(()=>{$('#mode').textContent='BACKEND UNREACHABLE · Start FastAPI, then reload.';});
+
+// About expands the information panel without resetting the conversation.
+$('#about-toggle').onclick=()=>{
+ const panel=$('#about-panel');
+ panel.hidden=!panel.hidden;
+ $('#about-toggle').setAttribute('aria-expanded',String(!panel.hidden));
+};

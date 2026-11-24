@@ -6,3 +6,41 @@
 .topbar{position:sticky;top:0;z-index:10;background:var(--paper)}
 
 #onboarding{margin:18px 28px 0;padding:18px;background:#edf3ed;border:1px solid #91ad9b;border-radius:8px}#onboarding h2{font-size:18px}#onboarding p{font-size:14px;margin:6px 0 12px}.stage-actions{display:flex;gap:8px;flex-wrap:wrap}.stage-actions button{font-size:13px}.stage-actions .outline{background:white}#stage-status{font-size:12px!important;font-weight:650}#onboarding.independent{background:#f9faf7}button{min-height:44px}.quick button{min-height:44px}.rating button{min-height:44px}#chat{font-size:1rem}.entry p{font-size:1rem}.privacy{font-size:13px}textarea{font-size:1rem}.controls label{font-size:13px}select{font-size:14px}.mode{font-size:14px}@media(max-width:680px){#onboarding{margin:14px 16px 0}#onboarding .eyebrow{font-size:9px}#restart-onboarding{display:inline-block}aside .textbutton{display:inline-block}}
+
+/* Larger type and a single-column chat with optional About information. */
+body{font-size:20px}
+.header-actions{display:flex;gap:12px;align-items:center}
+.workspace{display:block;max-width:1120px;padding-top:28px}
+#about-panel[hidden]{display:none!important}
+#about-panel{margin:0 0 24px;padding:24px;background:#fff;border:1px solid var(--line);border-radius:12px}
+#about-panel h1{font-size:38px}
+#about-panel .intro,#about-panel .guide,#about-panel .privacy{display:block}
+#about-panel .textbutton{display:inline-block}
+#about-panel .eyebrow,.eyebrow,.conversation-heading .eyebrow,.who{font-size:14px}
+#about-panel .guide h2,.mode{font-size:18px}
+#about-panel .guide li,#about-panel .privacy,.textbutton{font-size:18px}
+#about-panel .guide li:before{font-size:16px}
+.conversation-heading h2,#onboarding h2{font-size:24px}
+.entry p,textarea,.hint{font-size:20px}
+.example,.notice,details,.rating,.rating button,.quick button,select,.controls label,.stage-actions button,.composer-bottom button,dialog p{font-size:18px}
+.badge,.composer-bottom span,footer{font-size:15px}
+#onboarding p{font-size:19px}
+#stage-status{font-size:17px!important}
+#contacts h3{font-size:20px}
+@media(max-width:680px){
+ .topbar{height:auto;min-height:88px;gap:12px;flex-wrap:wrap;padding:12px 16px}
+ .header-actions{gap:8px;flex-wrap:wrap}
+ .topbar button,.composer-bottom button{font-size:17px}
+ .workspace{padding:18px 12px}
+ #about-panel{margin:0 0 18px;padding:18px}
+ .brand small{font-size:11px}
+ .controls{flex-wrap:wrap}
+ .controls label{flex-wrap:wrap}
+ .composer-bottom{flex-wrap:wrap}
+ .composer-bottom span{max-width:none}
+ .entry.user{margin-left:16px}
+}
+/* Let mobile messages grow so the example never meets the quick actions mid-line. */
+@media(max-width:680px){
+ #chat{height:auto;min-height:390px;max-height:none;overflow:visible}
+}
