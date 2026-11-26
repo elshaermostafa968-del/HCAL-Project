@@ -1,60 +1,84 @@
 # Academic Writing Coach
 
-**Weeks 6-7 update:** start with `README-W6-7.md` for the three-stage onboarding, recording script, new unsafe path, and exact submission checklist. This README retains the original provider/setup documentation.
+A runnable university teaching prototype for the **Transparency** HAI principle. HTML/CSS/JavaScript frontend, Python FastAPI backend, and 40 fictional guideline cases. It gives coaching and step-by-step hints, never essay generation. For the three-stage onboarding, recording script and submission checklist, see `README-W6-7.md`.
 
-A runnable university teaching prototype for the **Transparency** HAI principle. HTML/CSS/JavaScript frontend, Python FastAPI backend, and 40 fictional guideline cases. Coaching and incremental hints, never essay generation.
+## Quick start (clean clone)
 
-## Start locally
-
-Python 3.10 or newer. Run all commands from this project folder, not `backend/`.
+Requires Python 3.10 or newer and Git.
 
 ```sh
+git clone https://github.com/elshaermostafa968-del/HCAL-Project.git
+cd HCAL-Project/milestones/week-06-07/chatbot
 python -m venv .venv
-# macOS / Linux
-source .venv/bin/activate
-# Windows PowerShell instead: .venv\Scripts\Activate.ps1
-python -m pip install -r requirements.txt
-python -m uvicorn backend.app.main:app --reload
 ```
 
-Open **http://127.0.0.1:8000**. Once installed, the last command is the one-command launch. No Node build, database, API key, or external service is needed for the default local demo. `/docs` has the interactive API documentation; `/health` reports the active provider. Do not open `frontend/index.html` directly.
+Activate the virtual environment (pick the line for your shell):
 
-## Local demo versus real-model evidence
+```sh
+# Windows cmd
+.venv\Scripts\activate.bat
+# Windows PowerShell
+.venv\Scripts\Activate.ps1
+# macOS / Linux
+source .venv/bin/activate
+```
 
-Default `LLM_PROVIDER=local` returns deterministic, source-linked feedback from the retrieved case. Every card explicitly says **LOCAL DEMO / NO LIVE MODEL**. This proves the frontend/backend pipeline works. **It does not meet the check-in's first real model response requirement.** No successful live call has been claimed or included.
+Install and run (the same on every system, from the `chatbot` folder, not `backend/`):
 
-For a real model, create `.env` in the project root by copying `.env.example`:
+```sh
+python -m pip install -r requirements.txt
+python -m uvicorn backend.app.main:app
+```
+
+Open **http://127.0.0.1:8000**. Do not open `frontend/index.html` directly. Add `--reload` to the last command only while editing code. `/docs` has the API documentation and `/health` shows the active provider.
+
+Check that it started: `http://127.0.0.1:8000/health` should show `"provider":"local"`, `"live_model":false` and `"dataset_cases":40`. Every reply card says **Local demo, No live model**.
+
+## Choose a provider
+
+Set the provider in a local `.env` file in the `chatbot` folder (the same folder as `requirements.txt`). Restart uvicorn after changing it.
+
+| Provider | `.env` setting | Key needed |
+|---|---|---|
+| Local demo (default) | `LLM_PROVIDER=local`, or no `.env` at all | None |
+| Gemini | `LLM_PROVIDER=gemini` | `GEMINI_API_KEY` |
+| OpenAI | `LLM_PROVIDER=openai` | `OPENAI_API_KEY` |
+
+Local mode returns fixed, source-linked feedback from the retrieved case and calls no external service.
+
+To use Gemini, copy the template and fill in your own values:
+
+```sh
+# Windows cmd
+copy .env.example .env
+# Windows PowerShell, macOS, Linux
+cp .env.example .env
+```
 
 ```ini
 LLM_PROVIDER=gemini
-GEMINI_API_KEY=your_own_key_here
-GEMINI_MODEL=gemini-2.5-flash
+GEMINI_API_KEY=<your own key goes here, never in the repo>
+GEMINI_MODEL=<model name>
 ```
 
-Or choose `LLM_PROVIDER=openai`, `OPENAI_API_KEY`, and `OPENAI_MODEL`. Restart uvicorn after changing `.env`. Existing environment variables take priority over `.env`. Real-provider mode does not silently switch to local when a key is missing or invalid.
+- `GEMINI_API_KEY` is the required variable. Create it in your own Google AI Studio account (https://ai.google.dev/gemini-api/docs/api-key). Never paste it into chat or code.
+- `.env` is listed in `.gitignore` and stays on your machine. Do not upload or commit it. The tracked `.env.example` has empty values.
+- `GEMINI_MODEL` is optional. The code default is `gemini-2.5-flash`. The team reported using `gemini-3.1-flash-lite` for its live call. That is the team's report. It is not shown by any response in this repository and Google's availability for it was not checked here. Confirm that the model is available to your own project and quota. Pricing and free-tier limits are on Google's pages: https://ai.google.dev/gemini-api/docs/pricing and https://ai.google.dev/gemini-api/docs/rate-limits
+- Variables already set in your terminal win over `.env`. In Windows cmd, `set LLM_PROVIDER=` clears one for the current window. In PowerShell use `Remove-Item Env:LLM_PROVIDER`, and in macOS/Linux use `unset LLM_PROVIDER`.
+- With Gemini or OpenAI selected, a missing or invalid key gives an error reply. It never switches silently to local mode. Reply cards say **Live model** only when the provider answered.
+- Use synthetic text only. Some free tiers may use inputs to improve products, so read the provider's current terms first.
 
-### Obtain a Gemini key
+## What this tool does not do
 
-1. Follow Google's official key guide: https://ai.google.dev/gemini-api/docs/api-key?authuser=9
-2. Open the AI Studio API-key page linked there, sign into your own account, select/create your project, and create the key.
-3. Store it only in the local `.env`. Never send it in chat, commit it, or put it in JavaScript.
-4. Confirm the model is available to your project and check its free-tier quota. Some models have free usage, but access, regions, quotas, and pricing can change. Creating a key does not guarantee free unlimited calls. Do not enable billing unless your team intends to pay.
+- It does not write or rewrite your assignment, and it does not grade your work.
+- It does not check that a source exists or that a quotation is accurate.
+- It is not a general grammar engine, an academic-integrity detector or a production service. It covers 40 fictional teaching cases and can miss legitimate requests.
 
-Official pricing: https://ai.google.dev/gemini-api/docs/pricing?authuser=002
-Official quotas: https://ai.google.dev/gemini-api/docs/rate-limits?authuser=0
-REST API contract: https://ai.google.dev/api/generate-content?authuser=2
+## Status and verification
 
-Use synthetic text only. On some free tiers, provider inputs can be used to improve products. Read the provider's current terms before enabling live mode.
-
-### Capture the first backend-served real response
-
-Keep the server running in terminal 1; in terminal 2, with the same virtual environment:
-
-```sh
-python scripts/first_call.py
-```
-
-The script refuses local-mode evidence and saves a timestamped `evidence/live-*.json` only after a successful response with `live_model_response=true`. Record both terminals and the browser's source panel. If the model cannot be reached, no live evidence is saved. Keep using local mode to demonstrate other paths while resolving the live call.
+- **Independent local run:** a fresh clone of this repository, installed from `requirements.txt` on Linux (Python 3.10) in local mode with no key, started with the command above. `/health` showed provider `local` and 40 cases, and a sample question returned a normal reply. Windows and macOS were not tested here. `pytest` (10 of 10) and `eval/run_eval.py` (40 of 40) pass in local mode. These evaluation cases reuse the project's own fixtures, so this is a smoke check, not accuracy, held-out testing, latency or usability evidence.
+- **Live Gemini:** a teammate reported one successful live call on 2026-11-26. We have not independently verified it and have not re-run live Gemini. Treat live mode as unverified. `python scripts/first_call.py` (while the server is running with a real provider) saves `evidence/live-*.json` only after a successful live response.
+- **Screenshot:** `docs/principle-feature.jpg` shows the rule, limits and hints in local demo mode.
 
 ## Three-minute check-in demo
 
@@ -125,14 +149,3 @@ This is a small English-language prototype, not a general grammar engine, public
 
 Default binding is localhost. Do not expose this version to the public internet: it lacks authentication, distributed rate limiting, durable per-user state, production retention controls, HTTPS deployment, and comprehensive abuse protection. Do not upload real student data. `docs/data-and-permissions.md` describes third-party source restrictions and a proposed license that the team must adopt before claiming permission to redistribute.
 
-## Weeks 8-9 checkpoint notes
-
-1. The prototype runs from this repository in local demo mode with no API key. Live Gemini mode is not verified yet; to try it, set GEMINI_API_KEY and LLM_PROVIDER=gemini in a local .env in the chatbot folder (never committed).
-2. The principle feature (rule, limits and hints) is shown in local demo mode: docs/principle-feature.jpg
-
-## Milestone 4 notes
-
-- Local demo: the prototype runs from this repository in local demo mode with no API key (LLM_PROVIDER=local).
-- Live Gemini mode: to try it, set GEMINI_API_KEY, LLM_PROVIDER=gemini and GEMINI_MODEL in a local .env in the chatbot folder. The .env file is never committed. A teammate reported one successful live call on 2026-11-26; it has not been independently verified, so treat live mode as unverified.
-- Local smoke test: eval/run_eval.py with LLM_PROVIDER=local passes 40 of 40 cases (pytest: 10 of 10). These cases reuse the project's own fixtures, so this is a smoke check only. It is not accuracy, not held-out testing, not provider latency, not real-model evidence and not usability testing.
-- Limits: this is a teaching prototype, not a grading or source-verification service.
