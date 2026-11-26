@@ -129,3 +129,10 @@ Default binding is localhost. Do not expose this version to the public internet:
 
 1. The prototype runs from this repository in local demo mode with no API key. Live Gemini mode is not verified yet; to try it, set GEMINI_API_KEY and LLM_PROVIDER=gemini in a local .env in the chatbot folder (never committed).
 2. The principle feature (rule, limits and hints) is shown in local demo mode: docs/principle-feature.jpg
+
+## Milestone 4 notes
+
+- Local demo: the prototype runs from this repository in local demo mode with no API key (LLM_PROVIDER=local).
+- Live Gemini mode: to try it, set GEMINI_API_KEY, LLM_PROVIDER=gemini and GEMINI_MODEL in a local .env in the chatbot folder. The .env file is never committed. A teammate reported one successful live call on 2026-11-26; it has not been independently verified, so treat live mode as unverified.
+- Local smoke test: eval/run_eval.py with LLM_PROVIDER=local passes 40 of 40 cases (pytest: 10 of 10). These cases reuse the project's own fixtures, so this is a smoke check only. It is not accuracy, not held-out testing, not provider latency, not real-model evidence and not usability testing.
+- Limits: this is a teaching prototype, not a grading or source-verification service.
