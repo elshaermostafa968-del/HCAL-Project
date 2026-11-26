@@ -71,6 +71,10 @@ async def chat(data: ChatInput):
         return finish('unsafe','I cannot help fabricate sources or results, conceal plagiarism, or process personal information or secrets. Use fictional text and real, verifiable source details. Ask your instructor or librarian if you need help.',uncertainty_note='Do not share real student records, passwords, or API keys.')
     if re.search(r'\b(?:write|generate|compose|rewrite)\b.{0,40}\b(?:essay|paper|assignment|paragraph|draft)\b|(?:اكتب|اكتبلي|اعمل).{0,25}(?:مقال|بحث|واجب)',text,re.I):
         return finish('out_of_scope','I can explain a writing rule and give hints, but I cannot write or rewrite your assignment. Share a fictional excerpt and the point you want to understand.')
+    if re.search(r'\b(?:find|book|reserve|get)\s+(?:me\s+|us\s+)?(?:an?\s+|the\s+|some\s+)?(?:\w+\s+)?(?:hotel|flight|airbnb|restaurant|taxi)s?\b(?!\s+(?:manual|case|study|studies|example|report|paper|article|citation|source|reference|review|industry|policy|guide|chapter|data|brochure|booklet))',text,re.I) and not re.search(r'\b(?:cite|citing|citation|apa|mla|ieee|reference|source|essay|paper|paragraph|thesis|quote|quotation|bibliography|in-text|manual|case study|excerpt|draft)\b',text,re.I):
+        return finish('out_of_scope','I am for academic writing only, so I cannot help with travel or bookings; share a fictional excerpt if you want to check a writing rule.')
+    if re.search(r'^\W*(?:i am new(?: to this)?\W+)?(?:what (?:can|does) (?:this|the|your) (?:writing )?(?:coach|assistant|chatbot|tool) do|what can you (?:do|help (?:me )?with))\b',text,re.I):
+        return finish('needs_context','I explain grammar, structure and citation rules with a source, and give step-by-step hints. I do not write or rewrite your assignment, and I do not grade it. Share a fictional excerpt and say which style you need (APA, MLA, or IEEE).')
     if text.lower() in {'talk to a person','human','handover'}:
         return finish('handover','Pause here and contact your instructor, university writing center, or librarian. No message has been sent and no appointment has been booked.')
     if len(text.split()) < 5:
