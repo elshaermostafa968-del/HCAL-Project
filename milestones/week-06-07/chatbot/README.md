@@ -124,3 +124,8 @@ O1 rule accuracy ≥90%, O2 independent revision ≥80%, O3 label comprehension 
 This is a small English-language prototype, not a general grammar engine, publication lookup tool, academic-integrity detector, production service, or real institutional handover system. Unsupported requests may not match even when legitimate. Citation formatting feedback does not prove a work exists. No university contact details were supplied, so contact routes are generic and explicitly ask students to use their own syllabus/university site.
 
 Default binding is localhost. Do not expose this version to the public internet: it lacks authentication, distributed rate limiting, durable per-user state, production retention controls, HTTPS deployment, and comprehensive abuse protection. Do not upload real student data. `docs/data-and-permissions.md` describes third-party source restrictions and a proposed license that the team must adopt before claiming permission to redistribute.
+
+## Weeks 8-9 checkpoint notes
+
+1. The prototype runs from this repository in local demo mode with no API key. Live Gemini mode is not verified yet; to try it, set GEMINI_API_KEY and LLM_PROVIDER=gemini in a local .env in the chatbot folder (never committed).
+2. The principle feature (rule, limits and hints) is shown in local demo mode: docs/principle-feature.jpg
