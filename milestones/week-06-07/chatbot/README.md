@@ -78,7 +78,7 @@ GEMINI_MODEL=<model name>
 
 - **Independent local run:** a fresh clone of this repository, installed from `requirements.txt` on Linux (Python 3.10) in local mode with no key, started with the command above. `/health` showed provider `local` and 40 cases, and a sample question returned a normal reply. Windows and macOS were not tested here. `pytest` (10 of 10) and `eval/run_eval.py` (40 of 40) pass in local mode. These evaluation cases reuse the project's own fixtures, so this is a smoke check, not accuracy, held-out testing, latency or usability evidence.
 - **Live Gemini:** a teammate reported one successful live call on 2026-11-26. We have not independently verified it and have not re-run live Gemini. Treat live mode as unverified. `python scripts/first_call.py` (while the server is running with a real provider) saves `evidence/live-*.json` only after a successful live response.
-- **Screenshot:** `docs/principle-feature.jpg` shows the rule, limits and hints in local demo mode.
+- **Screenshot:** `docs/live-gemini-reply.jpg` shows live Gemini mode on the current build, one captured reply. The 40-case suite remains local smoke consistency, not live evidence.
 
 ## Three-minute check-in demo
 
